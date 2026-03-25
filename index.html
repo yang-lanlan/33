@@ -96,12 +96,10 @@
     // 修复：强制带上时间戳打破缓存
     const fetchExistingSha = async (path) => {
       const url = `https://api.github.com/repos/${DEFAULT_GH.owner}/${DEFAULT_GH.repo}/contents/${path}?ref=${encodeURIComponent(DEFAULT_GH.branch)}&t=${Date.now()}`;
-      const resp = await fetch(url, { 
-        headers: { 
-          Authorization: `Bearer ${GITHUB_TOKEN}`,
-          'Cache-Control': 'no-cache, no-store, must-revalidate',
-          'Pragma': 'no-cache'
-        } 
+      const resp = await fetch(url, {
+        headers: {
+          Authorization: `Bearer ${GITHUB_TOKEN}`
+        }
       });
       if (resp.status === 404) return null;
       if (!resp.ok) throw new Error(`读取 SHA 失败`);
