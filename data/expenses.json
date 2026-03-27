@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-03-27T18:27:59.318Z",
+  "exportedAt": "2026-03-27T18:28:18.429Z",
   "records": [
     {
       "date": "2026-03-26",
@@ -48,6 +48,12 @@
       "name": "地铁",
       "category": "交通",
       "amount": "6"
+    },
+    {
+      "date": "2026-03-27",
+      "name": "weee",
+      "category": "食品",
+      "amount": "36"
     }
   ]
 }
