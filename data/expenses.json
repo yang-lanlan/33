@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-03-28T00:02:41.294Z",
+  "exportedAt": "2026-03-28T21:54:50.598Z",
   "records": [
     {
       "date": "2026-03-26",
@@ -72,6 +72,12 @@
       "name": "星巴克",
       "category": "食品",
       "amount": "7"
+    },
+    {
+      "date": "2026-03-28",
+      "name": "target",
+      "category": "百货",
+      "amount": "28"
     }
   ]
 }
