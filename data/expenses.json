@@ -1,107 +1,158 @@
 {
-  "exportedAt": "2026-03-30T18:21:59.344Z",
+  "exportedAt": "2026-03-31T04:23:04.439Z",
   "records": [
     {
+      "id": "49c8034d-e32b-4c86-869d-4587233c3ba3",
       "date": "2026-03-26",
       "name": "拖鞋",
       "category": "百货",
-      "amount": "36"
+      "amount": 36,
+      "createdAt": "2026-03-31T04:21:36.356Z",
+      "updatedAt": "2026-03-31T04:21:36.356Z"
     },
     {
+      "id": "5d16538c-32e2-4bb6-b485-31f5ceefc212",
       "date": "2026-03-26",
       "name": "weee",
       "category": "食品",
-      "amount": "39"
+      "amount": 39,
+      "createdAt": "2026-03-31T04:21:36.356Z",
+      "updatedAt": "2026-03-31T04:21:36.356Z"
     },
     {
+      "id": "a7852fd5-7b54-434d-8402-e4f83fbeac33",
       "date": "2026-03-31",
       "name": "weee",
       "category": "食品",
-      "amount": "37"
+      "amount": 37,
+      "createdAt": "2026-03-31T04:21:36.356Z",
+      "updatedAt": "2026-03-31T04:21:36.356Z"
     },
     {
+      "id": "0b5aa358-f9d3-43fa-8f62-37a02bc38742",
       "date": "2026-04-04",
       "name": "weee",
       "category": "食品",
-      "amount": "35"
+      "amount": 35,
+      "createdAt": "2026-03-31T04:21:36.356Z",
+      "updatedAt": "2026-03-31T04:21:36.356Z"
     },
     {
+      "id": "03c83fd7-1101-4a5b-b286-d6ba6c03a55a",
       "date": "2026-03-26",
       "name": "星巴克",
       "category": "食品",
-      "amount": "7"
+      "amount": 7,
+      "createdAt": "2026-03-31T04:21:36.356Z",
+      "updatedAt": "2026-03-31T04:21:36.356Z"
     },
     {
+      "id": "19a38230-cfb5-4dd1-a857-5f7e2203a320",
       "date": "2026-03-26",
-      "name": "米雪",
+      "name": "蜜雪",
       "category": "食品",
-      "amount": "2"
+      "amount": 2,
+      "createdAt": "2026-03-31T04:21:36.356Z",
+      "updatedAt": "2026-03-31T04:23:04.435Z"
     },
     {
+      "id": "9a996da0-8c31-4b78-9092-e5362989426d",
       "date": "2026-03-27",
       "name": "地铁",
       "category": "交通",
-      "amount": "6"
+      "amount": 6,
+      "createdAt": "2026-03-31T04:21:36.356Z",
+      "updatedAt": "2026-03-31T04:21:36.356Z"
     },
     {
+      "id": "c2a46a72-02de-434c-9835-25f2620cd1bf",
       "date": "2026-03-26",
       "name": "地铁",
       "category": "交通",
-      "amount": "6"
+      "amount": 6,
+      "createdAt": "2026-03-31T04:21:36.356Z",
+      "updatedAt": "2026-03-31T04:21:36.356Z"
     },
     {
+      "id": "d04be72d-5401-44fd-8a1e-a0067297abda",
       "date": "2026-03-27",
       "name": "weee",
       "category": "食品",
-      "amount": "36"
+      "amount": 36,
+      "createdAt": "2026-03-31T04:21:36.356Z",
+      "updatedAt": "2026-03-31T04:21:36.356Z"
     },
     {
+      "id": "43f4464c-360a-42ab-ac26-2c6e8944f614",
       "date": "2026-03-28",
       "name": "星巴克",
       "category": "食品",
-      "amount": "7"
+      "amount": 7,
+      "createdAt": "2026-03-31T04:21:36.356Z",
+      "updatedAt": "2026-03-31T04:21:36.356Z"
     },
     {
+      "id": "79abee7a-c418-4e51-851e-0c9c9585b46a",
       "date": "2026-03-27",
       "name": "星巴克",
       "category": "食品",
-      "amount": "7"
+      "amount": 7,
+      "createdAt": "2026-03-31T04:21:36.356Z",
+      "updatedAt": "2026-03-31T04:21:36.356Z"
     },
     {
+      "id": "754b25f1-d0b1-4100-afe1-811dd3aa69f0",
       "date": "2026-03-26",
       "name": "星巴克",
       "category": "食品",
-      "amount": "7"
+      "amount": 7,
+      "createdAt": "2026-03-31T04:21:36.356Z",
+      "updatedAt": "2026-03-31T04:21:36.356Z"
     },
     {
+      "id": "a7eb78de-9e92-4845-84b5-85a536802d73",
       "date": "2026-03-28",
       "name": "target",
       "category": "百货",
-      "amount": "28"
+      "amount": 28,
+      "createdAt": "2026-03-31T04:21:36.356Z",
+      "updatedAt": "2026-03-31T04:21:36.356Z"
     },
     {
+      "id": "f38818dc-70f0-4afa-808c-1331fd3b0ae4",
       "date": "2026-03-29",
       "name": "weee",
       "category": "食品",
-      "amount": "36"
+      "amount": 36,
+      "createdAt": "2026-03-31T04:21:36.356Z",
+      "updatedAt": "2026-03-31T04:21:36.356Z"
     },
     {
+      "id": "b20c6757-ed07-4a48-b287-7117ca4b3c1c",
       "date": "2026-03-30",
       "name": "weee",
       "category": "食品",
-      "amount": "36"
+      "amount": 36,
+      "createdAt": "2026-03-31T04:21:36.356Z",
+      "updatedAt": "2026-03-31T04:21:36.356Z"
     },
     {
+      "id": "208c3748-3bea-4d5a-80f8-86829171d673",
       "date": "2026-03-30",
       "name": "地铁",
       "category": "交通",
-      "amount": "9"
+      "amount": 9,
+      "createdAt": "2026-03-31T04:21:36.356Z",
+      "updatedAt": "2026-03-31T04:21:36.356Z"
     },
     {
+      "id": "1746ae38-75df-4f93-9336-c578903ae4a6",
       "date": "2026-03-30",
       "name": "青菜",
       "category": "食品",
-      "amount": "6"
+      "amount": 6,
+      "createdAt": "2026-03-31T04:21:36.356Z",
+      "updatedAt": "2026-03-31T04:21:36.356Z"
     }
   ]
 }
