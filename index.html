@@ -150,27 +150,34 @@
       '健康': ['挂号费', '氟西汀', '减肥针', '呼吸机']
     };
 
-    const autoSetCategoryByAmount = () => {
-      const amount = Number(amountInput.value);
-      if (!Number.isNaN(amount) && amount < 0) {
-        categorySelect.value = '收入';
+    const syncAmountSignWithCategory = () => {
+      const rawValue = amountInput.value;
+      if (rawValue === '' || rawValue === '-' || rawValue === '.' || rawValue === '-.') return;
+
+      const amount = Number(rawValue);
+      if (Number.isNaN(amount)) return;
+
+      if (categorySelect.value === '收入' && amount > 0) {
+        amountInput.value = (-amount).toString();
+      } else if (categorySelect.value !== '收入' && amount < 0) {
+        amountInput.value = Math.abs(amount).toString();
       }
     };
 
     nameInput.addEventListener('input', (e) => {
-      const amount = Number(amountInput.value);
-      if (!Number.isNaN(amount) && amount < 0) return;
+      if (categorySelect.value === '收入') return;
 
       const inputValue = e.target.value.toLowerCase();
       for (const [category, keywords] of Object.entries(categoryRules)) {
         if (keywords.some(keyword => inputValue.includes(keyword))) {
           categorySelect.value = category;
+          syncAmountSignWithCategory();
           break;
         }
       }
     });
 
-    amountInput.addEventListener('input', autoSetCategoryByAmount);
+    categorySelect.addEventListener('change', syncAmountSignWithCategory);
 
     const utf8ToBase64 = (text) => btoa(unescape(encodeURIComponent(text)));
     const base64ToUtf8 = (base64) => {
@@ -434,8 +441,15 @@
       event.preventDefault();
       const formData = new FormData(form);
       const nowIso = new Date().toISOString();
-      const amountValue = Number(formData.get('amount'));
-      const finalCategory = amountValue < 0 ? '收入' : formData.get('category');
+
+      let amountValue = Number(formData.get('amount'));
+      let finalCategory = formData.get('category');
+
+      if (finalCategory === '收入' && amountValue > 0) {
+        amountValue = -amountValue;
+      } else if (finalCategory !== '收入' && amountValue < 0) {
+        amountValue = Math.abs(amountValue);
+      }
 
       const record = normalizeRecord({
         id: editingId || crypto.randomUUID(),
