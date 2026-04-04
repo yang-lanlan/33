@@ -63,9 +63,10 @@
           <option value="交通">交通</option>
           <option value="娱乐">娱乐</option>
           <option value="其他">其他</option>
+          <option value="收入">收入</option>
         </select>
       </label>
-      <label>消费金额（USD）<input id="amount" name="amount" type="number" inputmode="decimal" step="0.01" min="0" required /></label>
+      <label>消费金额（USD）<input id="amount" name="amount" type="number" inputmode="decimal" step="0.01" required /></label>
       <div class="btn-row">
         <button id="submit-btn" type="submit" disabled>正在连接云端...</button>
         <button id="cancel-edit-btn" type="button" class="secondary" style="display:none;">取消修改</button>
@@ -132,6 +133,7 @@
     const statusEl = document.querySelector('#status');
     const nameInput = document.querySelector('#name');
     const categorySelect = document.querySelector('#category');
+    const amountInput = document.querySelector('#amount');
 
     const statsStartInput = document.querySelector('#stats-start');
     const statsEndInput = document.querySelector('#stats-end');
@@ -148,7 +150,17 @@
       '健康': ['挂号费', '氟西汀', '减肥针', '呼吸机']
     };
 
+    const autoSetCategoryByAmount = () => {
+      const amount = Number(amountInput.value);
+      if (!Number.isNaN(amount) && amount < 0) {
+        categorySelect.value = '收入';
+      }
+    };
+
     nameInput.addEventListener('input', (e) => {
+      const amount = Number(amountInput.value);
+      if (!Number.isNaN(amount) && amount < 0) return;
+
       const inputValue = e.target.value.toLowerCase();
       for (const [category, keywords] of Object.entries(categoryRules)) {
         if (keywords.some(keyword => inputValue.includes(keyword))) {
@@ -157,6 +169,8 @@
         }
       }
     });
+
+    amountInput.addEventListener('input', autoSetCategoryByAmount);
 
     const utf8ToBase64 = (text) => btoa(unescape(encodeURIComponent(text)));
     const base64ToUtf8 = (base64) => {
@@ -318,7 +332,7 @@
         const amountCny = usdToCny(amountUsd);
         const categoryDailyAvgUsd = amountUsd / dayCount;
         const categoryDailyAvgCny = amountCny / dayCount;
-        const ratio = totalAmountUsd > 0 ? `${(amountUsd / totalAmountUsd * 100).toFixed(1)}%` : '0.0%';
+        const ratio = totalAmountUsd !== 0 ? `${(amountUsd / totalAmountUsd * 100).toFixed(1)}%` : '0.0%';
         return `
           <tr>
             <td>${category}</td>
@@ -359,7 +373,7 @@
       dateInput.value = target.date;
       nameInput.value = target.name;
       categorySelect.value = target.category;
-      document.querySelector('#amount').value = Number(target.amount);
+      amountInput.value = Number(target.amount);
       submitBtn.textContent = '保存修改并同步';
       cancelEditBtn.style.display = 'block';
       statusEl.textContent = '正在修改历史记录，保存后会同步到云端。';
@@ -420,12 +434,15 @@
       event.preventDefault();
       const formData = new FormData(form);
       const nowIso = new Date().toISOString();
+      const amountValue = Number(formData.get('amount'));
+      const finalCategory = amountValue < 0 ? '收入' : formData.get('category');
+
       const record = normalizeRecord({
         id: editingId || crypto.randomUUID(),
         date: formData.get('date'),
         name: formData.get('name'),
-        category: formData.get('category'),
-        amount: Number(formData.get('amount')),
+        category: finalCategory,
+        amount: amountValue,
         createdAt: nowIso,
         updatedAt: nowIso
       });
