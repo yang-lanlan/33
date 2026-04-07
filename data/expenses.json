@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-04-07T22:55:30.401Z",
+  "exportedAt": "2026-04-07T22:55:40.551Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -361,6 +361,15 @@
       "amount": 30,
       "createdAt": "2026-04-07T22:55:30.389Z",
       "updatedAt": "2026-04-07T22:55:30.389Z"
+    },
+    {
+      "id": "2543c831-81cb-4ec6-8d44-2bf79aaa7699",
+      "date": "2026-04-07",
+      "name": "tuome",
+      "category": "食品",
+      "amount": 23,
+      "createdAt": "2026-04-07T22:55:40.541Z",
+      "updatedAt": "2026-04-07T22:55:40.541Z"
     }
   ]
 }
