@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-04-14T15:22:26.791Z",
+  "exportedAt": "2026-04-14T20:17:28.825Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -541,6 +541,15 @@
       "amount": 4,
       "createdAt": "2026-04-14T15:22:26.779Z",
       "updatedAt": "2026-04-14T15:22:26.779Z"
+    },
+    {
+      "id": "e8a089c3-33fd-4634-93e2-a37c9d0c0136",
+      "date": "2026-04-14",
+      "name": "姑苏里",
+      "category": "食品",
+      "amount": 11,
+      "createdAt": "2026-04-14T20:17:28.814Z",
+      "updatedAt": "2026-04-14T20:17:28.814Z"
     }
   ]
 }
