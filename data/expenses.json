@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-04-17T21:09:53.049Z",
+  "exportedAt": "2026-04-17T21:45:29.864Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -658,6 +658,15 @@
       "amount": 9,
       "createdAt": "2026-04-17T21:09:53.038Z",
       "updatedAt": "2026-04-17T21:09:53.038Z"
+    },
+    {
+      "id": "5014b806-3d9c-4bc2-8710-173d51bbbb72",
+      "date": "2026-04-17",
+      "name": "德昌",
+      "category": "食品",
+      "amount": 28,
+      "createdAt": "2026-04-17T21:45:29.854Z",
+      "updatedAt": "2026-04-17T21:45:29.854Z"
     }
   ]
 }
