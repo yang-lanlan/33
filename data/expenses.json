@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-04-17T17:36:31.609Z",
+  "exportedAt": "2026-04-17T21:09:37.729Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -631,6 +631,15 @@
       "amount": 20,
       "createdAt": "2026-04-17T17:36:31.602Z",
       "updatedAt": "2026-04-17T17:36:31.602Z"
+    },
+    {
+      "id": "ee7f17b1-1309-40a8-b9cc-666e7f677c51",
+      "date": "2026-04-17",
+      "name": "核磁共振",
+      "category": "健康",
+      "amount": 80.5,
+      "createdAt": "2026-04-17T21:09:37.718Z",
+      "updatedAt": "2026-04-17T21:09:37.718Z"
     }
   ]
 }
