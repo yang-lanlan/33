@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-04-18T02:43:37.496Z",
+  "exportedAt": "2026-04-18T15:03:45.420Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -694,6 +694,15 @@
       "amount": 35,
       "createdAt": "2026-04-18T02:43:13.568Z",
       "updatedAt": "2026-04-18T02:43:13.568Z"
+    },
+    {
+      "id": "6b305ae8-87b6-4646-9fb7-b561dcb1aeae",
+      "date": "2026-04-18",
+      "name": "植物园门票",
+      "category": "娱乐",
+      "amount": 7,
+      "createdAt": "2026-04-18T15:03:45.409Z",
+      "updatedAt": "2026-04-18T15:03:45.409Z"
     }
   ]
 }
