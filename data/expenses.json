@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-04-24T17:19:34.453Z",
+  "exportedAt": "2026-04-24T19:59:55.978Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -19,6 +19,15 @@
       "amount": -2972.55,
       "createdAt": "2026-04-14T14:43:06.915Z",
       "updatedAt": "2026-04-14T23:22:49.155Z"
+    },
+    {
+      "id": "c1a8a28f-1d75-4dd2-97eb-98e5772539f8",
+      "date": "2026-04-24",
+      "name": "保鲜袋",
+      "category": "百货",
+      "amount": 7,
+      "createdAt": "2026-04-24T19:59:55.968Z",
+      "updatedAt": "2026-04-24T19:59:55.968Z"
     },
     {
       "id": "f9b53e7e-de10-4bc5-b8e9-3ac9422f356d",
