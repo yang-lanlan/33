@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-04-26T15:51:20.514Z",
+  "exportedAt": "2026-04-27T03:41:41.577Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -19,6 +19,15 @@
       "amount": -2972.55,
       "createdAt": "2026-04-14T14:43:06.915Z",
       "updatedAt": "2026-04-14T23:22:49.155Z"
+    },
+    {
+      "id": "f2f5cff3-270e-45bf-9f72-71c8c38cd3bf",
+      "date": "2026-04-26",
+      "name": "会员",
+      "category": "其他",
+      "amount": 20,
+      "createdAt": "2026-04-27T03:41:41.566Z",
+      "updatedAt": "2026-04-27T03:41:41.566Z"
     },
     {
       "id": "be061799-21d8-444e-9177-7bfddac03662",
