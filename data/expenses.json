@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-04-27T04:27:51.258Z",
+  "exportedAt": "2026-04-27T04:28:02.682Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -19,6 +19,15 @@
       "amount": -2972.55,
       "createdAt": "2026-04-14T14:43:06.915Z",
       "updatedAt": "2026-04-14T23:22:49.155Z"
+    },
+    {
+      "id": "5175da27-a032-49e8-8b1d-d26f098afc51",
+      "date": "2026-04-27",
+      "name": "贴纸定做",
+      "category": "百货",
+      "amount": 7,
+      "createdAt": "2026-04-27T04:28:02.672Z",
+      "updatedAt": "2026-04-27T04:28:02.672Z"
     },
     {
       "id": "bad71adb-835f-4bfa-bd8f-3aae6adcb152",
