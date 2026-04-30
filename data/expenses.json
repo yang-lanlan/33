@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-04-30T16:12:35.804Z",
+  "exportedAt": "2026-04-30T17:41:18.789Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -37,6 +37,15 @@
       "amount": -2972.55,
       "createdAt": "2026-04-14T14:43:06.915Z",
       "updatedAt": "2026-04-14T23:22:49.155Z"
+    },
+    {
+      "id": "ac5f65c7-6fc6-4643-80e3-670ad1821629",
+      "date": "2026-04-29",
+      "name": "亚马逊退款",
+      "category": "收入",
+      "amount": -64,
+      "createdAt": "2026-04-30T17:41:18.767Z",
+      "updatedAt": "2026-04-30T17:41:18.767Z"
     },
     {
       "id": "19b4e9a3-62d7-4578-b20b-eda42a3a2edb",
