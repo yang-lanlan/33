@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-05-06T19:16:09.761Z",
+  "exportedAt": "2026-05-06T19:24:14.319Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -19,6 +19,15 @@
       "amount": 100,
       "createdAt": "2026-04-30T17:49:55.538Z",
       "updatedAt": "2026-04-30T17:51:03.945Z"
+    },
+    {
+      "id": "4e74ad45-d3db-447a-94df-6aad36433848",
+      "date": "2026-05-06",
+      "name": "氟西汀",
+      "category": "健康",
+      "amount": 7.5,
+      "createdAt": "2026-05-06T19:24:14.308Z",
+      "updatedAt": "2026-05-06T19:24:14.308Z"
     },
     {
       "id": "6e672ac0-9769-4f52-804f-c7897c707f5c",
