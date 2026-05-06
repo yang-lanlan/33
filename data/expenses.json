@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-05-05T02:55:32.187Z",
+  "exportedAt": "2026-05-06T00:29:04.837Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -19,6 +19,15 @@
       "amount": 100,
       "createdAt": "2026-04-30T17:49:55.538Z",
       "updatedAt": "2026-04-30T17:51:03.945Z"
+    },
+    {
+      "id": "c3c53369-4f22-42a8-8fe2-c8bae35afafa",
+      "date": "2026-05-05",
+      "name": "肛门垫",
+      "category": "百货",
+      "amount": 15,
+      "createdAt": "2026-05-06T00:29:04.825Z",
+      "updatedAt": "2026-05-06T00:29:04.825Z"
     },
     {
       "id": "d71a1da2-5113-44fa-a3a7-81fa007d7a06",
