@@ -63,7 +63,7 @@
           <option value="交通">交通</option>
           <option value="娱乐">娱乐</option>
           <option value="其他">其他</option>
-          <option value="收入">收入</option>
+          <option value="卖淫">卖淫</option>
         </select>
       </label>
       <label>消费金额（USD）<input id="amount" name="amount" type="number" inputmode="decimal" step="0.01" required /></label>
@@ -167,7 +167,7 @@
       if (!inputValue) return null;
 
       if (inputValue.includes('卖淫')) {
-        return '收入';
+        return '卖淫';
       }
 
       for (const [category, keywords] of Object.entries(categoryRules)) {
@@ -186,9 +186,9 @@
       const amount = Number(rawValue);
       if (Number.isNaN(amount)) return;
 
-      if (categorySelect.value === '收入' && amount > 0) {
+      if (categorySelect.value === '卖淫' && amount > 0) {
         amountInput.value = (-amount).toString();
-      } else if (categorySelect.value !== '收入' && amount < 0) {
+      } else if (categorySelect.value !== '卖淫' && amount < 0) {
         amountInput.value = Math.abs(amount).toString();
       }
     };
@@ -344,7 +344,7 @@
       }
 
       const filtered = currentRecords.filter((r) => r.date >= start && r.date <= end);
-      const totalAmountUsd = filtered.reduce((sum, item) => {return item.category !== '收入' ? sum + Number(item.amount || 0) : sum;}, 0);
+      const totalAmountUsd = filtered.reduce((sum, item) => {return item.category !== '卖淫' ? sum + Number(item.amount || 0) : sum;}, 0);
       const totalAmountCny = usdToCny(totalAmountUsd);
       const byCategory = {};
 
@@ -473,15 +473,15 @@
 
       let finalCategory = formData.get('category');
       const inferredCategory = inferCategoryFromName(formData.get('name'));
-      if (inferredCategory === '收入') {
-        finalCategory = '收入';
+      if (inferredCategory === '卖淫') {
+        finalCategory = '卖淫';
       }
 
       let amountValue = Number(formData.get('amount'));
 
-      if (finalCategory === '收入' && amountValue > 0) {
+      if (finalCategory === '卖淫' && amountValue > 0) {
         amountValue = -amountValue;
-      } else if (finalCategory !== '收入' && amountValue < 0) {
+      } else if (finalCategory !== '卖淫' && amountValue < 0) {
         amountValue = Math.abs(amountValue);
       }
 
