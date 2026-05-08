@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-05-08T00:53:10.670Z",
+  "exportedAt": "2026-05-08T00:53:22.446Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -19,6 +19,15 @@
       "amount": 100,
       "createdAt": "2026-04-30T17:49:55.538Z",
       "updatedAt": "2026-04-30T17:51:03.945Z"
+    },
+    {
+      "id": "8fed0fea-0650-4070-9333-75c239bf8e2e",
+      "date": "2026-05-07",
+      "name": "嫖娼",
+      "category": "娱乐",
+      "amount": 40,
+      "createdAt": "2026-05-08T00:53:22.434Z",
+      "updatedAt": "2026-05-08T00:53:22.434Z"
     },
     {
       "id": "b974766c-ad9a-41a8-b5f5-3994b1c074cd",
