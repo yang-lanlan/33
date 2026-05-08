@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-05-08T02:57:11.798Z",
+  "exportedAt": "2026-05-08T05:10:33.153Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -19,6 +19,15 @@
       "amount": 100,
       "createdAt": "2026-04-30T17:49:55.538Z",
       "updatedAt": "2026-04-30T17:51:03.945Z"
+    },
+    {
+      "id": "16ffabf3-5954-442e-9795-5209dfb41adc",
+      "date": "2026-05-07",
+      "name": "新龙兴",
+      "category": "食品",
+      "amount": 40,
+      "createdAt": "2026-05-08T05:10:33.133Z",
+      "updatedAt": "2026-05-08T05:10:33.133Z"
     },
     {
       "id": "809fa659-c06c-47ca-9014-21555e45d62b",
