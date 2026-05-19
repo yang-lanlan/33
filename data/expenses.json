@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-05-19T14:08:50.611Z",
+  "exportedAt": "2026-05-19T19:04:46.104Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -28,6 +28,15 @@
       "amount": 8,
       "createdAt": "2026-05-19T00:19:53.075Z",
       "updatedAt": "2026-05-19T00:19:53.075Z"
+    },
+    {
+      "id": "dd876f14-a4ad-4b92-a313-0620f85a4675",
+      "date": "2026-05-19",
+      "name": "巴黎贝甜",
+      "category": "食品",
+      "amount": 23,
+      "createdAt": "2026-05-19T19:04:46.062Z",
+      "updatedAt": "2026-05-19T19:04:46.062Z"
     },
     {
       "id": "d87a4e19-3bd7-4486-a0e5-cfe409468af0",
