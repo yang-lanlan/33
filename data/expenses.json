@@ -1,16 +1,7 @@
 {
-  "exportedAt": "2026-05-24T01:27:48.520Z",
+  "exportedAt": "2026-05-24T15:35:14.174Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
-    {
-      "id": "103c6858-e220-4ab0-8df1-92387ff03195",
-      "date": "2026-05-30",
-      "name": "变性手术费",
-      "category": "健康",
-      "amount": 3000,
-      "createdAt": "2026-04-12T21:21:18.154Z",
-      "updatedAt": "2026-04-30T17:51:57.321Z"
-    },
     {
       "id": "3e1c0df8-3f49-4c87-9705-1740daebcab6",
       "date": "2026-05-23",
