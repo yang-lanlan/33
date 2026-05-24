@@ -1,15 +1,15 @@
 {
-  "exportedAt": "2026-05-24T15:35:19.312Z",
+  "exportedAt": "2026-05-24T15:35:38.894Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
       "id": "3e1c0df8-3f49-4c87-9705-1740daebcab6",
       "date": "2026-05-23",
-      "name": "川菜外卖",
-      "category": "卖淫",
-      "amount": -45,
+      "name": "川菜",
+      "category": "食品",
+      "amount": 45,
       "createdAt": "2026-05-24T01:27:48.488Z",
-      "updatedAt": "2026-05-24T15:35:19.270Z"
+      "updatedAt": "2026-05-24T15:35:38.875Z"
     },
     {
       "id": "af587b74-263d-4db4-a8e6-b2be28a7bee8",
