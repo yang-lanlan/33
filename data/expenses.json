@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-05-26T20:56:27.745Z",
+  "exportedAt": "2026-05-26T20:56:59.511Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "b2e31e76-0208-41be-97fd-c7c6997c5fed",
+      "date": "2026-05-26",
+      "name": "云南菜",
+      "category": "食品",
+      "amount": 16,
+      "createdAt": "2026-05-26T20:56:59.466Z",
+      "updatedAt": "2026-05-26T20:56:59.466Z"
+    },
     {
       "id": "3c869905-a8b2-4d08-b50f-3fc30088dd06",
       "date": "2026-05-26",
