@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-05-26T04:31:07.328Z",
+  "exportedAt": "2026-05-26T20:20:45.730Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "e766802f-f06a-46a9-9fc1-58cc8bce6e00",
+      "date": "2026-05-26",
+      "name": "海运运费",
+      "category": "百货",
+      "amount": 9,
+      "createdAt": "2026-05-26T20:20:45.686Z",
+      "updatedAt": "2026-05-26T20:20:45.686Z"
+    },
     {
       "id": "f683d8da-6278-4757-adf9-3d61f6411653",
       "date": "2026-05-26",
