@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-05-27T00:13:44.987Z",
+  "exportedAt": "2026-05-27T00:14:09.559Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "85b3a28b-1f38-408c-b250-0485fc40212e",
+      "date": "2026-05-26",
+      "name": "理发",
+      "category": "健康",
+      "amount": 15,
+      "createdAt": "2026-05-27T00:14:09.515Z",
+      "updatedAt": "2026-05-27T00:14:09.515Z"
+    },
     {
       "id": "335ffae7-d43a-4bc0-9ff4-db63d3c09627",
       "date": "2026-05-26",
