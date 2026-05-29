@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-05-29T16:13:35.258Z",
+  "exportedAt": "2026-05-29T16:13:46.340Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "ab1991f7-e8bf-4c15-bfd8-a6c1c517de34",
+      "date": "2026-05-30",
+      "name": "剧本杀",
+      "category": "娱乐",
+      "amount": 110,
+      "createdAt": "2026-05-29T16:13:46.296Z",
+      "updatedAt": "2026-05-29T16:13:46.296Z"
+    },
     {
       "id": "719ee99e-9723-4d12-8653-b46f020b8d09",
       "date": "2026-05-29",
