@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-05-30T01:31:21.364Z",
+  "exportedAt": "2026-05-30T13:21:12.252Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "39f5f7bf-d2e0-4d9e-86ad-f82776338687",
+      "date": "2026-05-30",
+      "name": "爆爆珠",
+      "category": "食品",
+      "amount": 24,
+      "createdAt": "2026-05-30T13:21:12.207Z",
+      "updatedAt": "2026-05-30T13:21:12.207Z"
+    },
     {
       "id": "ab1991f7-e8bf-4c15-bfd8-a6c1c517de34",
       "date": "2026-05-30",
