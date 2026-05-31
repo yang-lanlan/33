@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-05-31T09:27:54.548Z",
+  "exportedAt": "2026-05-31T19:13:19.400Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "bb3cdfad-a60f-4c5b-9a51-0f79672582c8",
+      "date": "2026-05-31",
+      "name": "小花园",
+      "category": "食品",
+      "amount": 20,
+      "createdAt": "2026-05-31T19:13:19.356Z",
+      "updatedAt": "2026-05-31T19:13:19.356Z"
+    },
     {
       "id": "ef601011-29a5-4b9c-ab0f-8985c3bcdc38",
       "date": "2026-05-31",
