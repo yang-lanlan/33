@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-06-01T15:11:20.515Z",
+  "exportedAt": "2026-06-01T15:13:29.630Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -19,6 +19,15 @@
       "amount": 38,
       "createdAt": "2026-06-01T06:54:09.641Z",
       "updatedAt": "2026-06-01T06:54:09.641Z"
+    },
+    {
+      "id": "e0bf2b1e-0b12-4b89-99d5-2d6723bee6cb",
+      "date": "2026-05-31",
+      "name": "鲜芋仙",
+      "category": "食品",
+      "amount": 11.5,
+      "createdAt": "2026-06-01T15:13:29.589Z",
+      "updatedAt": "2026-06-01T15:13:29.589Z"
     },
     {
       "id": "bb3cdfad-a60f-4c5b-9a51-0f79672582c8",
