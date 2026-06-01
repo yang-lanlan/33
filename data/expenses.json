@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-06-01T16:54:17.482Z",
+  "exportedAt": "2026-06-01T17:22:48.080Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -30,6 +30,15 @@
       "updatedAt": "2026-06-01T06:54:09.641Z"
     },
     {
+      "id": "ef601011-29a5-4b9c-ab0f-8985c3bcdc38",
+      "date": "2026-05-31",
+      "name": "weee",
+      "category": "食品",
+      "amount": 20,
+      "createdAt": "2026-05-30T23:31:29.544Z",
+      "updatedAt": "2026-06-01T17:22:48.037Z"
+    },
+    {
       "id": "e0bf2b1e-0b12-4b89-99d5-2d6723bee6cb",
       "date": "2026-05-31",
       "name": "鲜芋仙",
@@ -46,15 +55,6 @@
       "amount": 20,
       "createdAt": "2026-05-31T19:13:19.356Z",
       "updatedAt": "2026-05-31T19:13:19.356Z"
-    },
-    {
-      "id": "ef601011-29a5-4b9c-ab0f-8985c3bcdc38",
-      "date": "2026-05-31",
-      "name": "weee",
-      "category": "食品",
-      "amount": 35.5,
-      "createdAt": "2026-05-30T23:31:29.544Z",
-      "updatedAt": "2026-05-30T23:31:29.544Z"
     },
     {
       "id": "643bbd70-5cfc-4467-b1b9-9c72f9c9e42f",
