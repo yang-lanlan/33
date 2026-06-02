@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-06-02T21:32:23.211Z",
+  "exportedAt": "2026-06-02T21:36:00.542Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -52,9 +52,9 @@
       "date": "2026-06-01",
       "name": "茶颜悦色",
       "category": "食品",
-      "amount": 57,
+      "amount": 58,
       "createdAt": "2026-06-01T06:54:09.641Z",
-      "updatedAt": "2026-06-02T21:32:23.164Z"
+      "updatedAt": "2026-06-02T21:36:00.498Z"
     },
     {
       "id": "da523203-a9a0-466b-a906-641cbf715155",
