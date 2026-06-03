@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-06-03T19:04:32.282Z",
+  "exportedAt": "2026-06-03T19:04:49.298Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "5e4cff1b-3833-4c30-b770-24750e5dade4",
+      "date": "2026-06-03",
+      "name": "农场集市",
+      "category": "食品",
+      "amount": 29,
+      "createdAt": "2026-06-03T16:57:04.350Z",
+      "updatedAt": "2026-06-03T19:04:49.276Z"
+    },
     {
       "id": "b1f75c2e-8bf6-4b44-ab60-e68d6e3ebc99",
       "date": "2026-06-03",
@@ -37,15 +46,6 @@
       "amount": 30,
       "createdAt": "2026-06-02T19:53:11.097Z",
       "updatedAt": "2026-06-03T16:57:17.613Z"
-    },
-    {
-      "id": "5e4cff1b-3833-4c30-b770-24750e5dade4",
-      "date": "2026-06-03",
-      "name": "农村",
-      "category": "食品",
-      "amount": 29,
-      "createdAt": "2026-06-03T16:57:04.350Z",
-      "updatedAt": "2026-06-03T16:57:04.350Z"
     },
     {
       "id": "295cc236-e450-4e00-83be-60a4cb50a7af",
