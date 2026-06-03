@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-06-03T16:57:04.396Z",
+  "exportedAt": "2026-06-03T16:57:17.635Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "061a954b-5e60-4649-ab1a-98f38fed98ec",
+      "date": "2026-06-03",
+      "name": "摘草莓",
+      "category": "娱乐",
+      "amount": 30,
+      "createdAt": "2026-06-02T19:53:11.097Z",
+      "updatedAt": "2026-06-03T16:57:17.613Z"
+    },
     {
       "id": "5e4cff1b-3833-4c30-b770-24750e5dade4",
       "date": "2026-06-03",
@@ -37,15 +46,6 @@
       "amount": 42,
       "createdAt": "2026-06-02T19:52:57.991Z",
       "updatedAt": "2026-06-03T16:56:18.039Z"
-    },
-    {
-      "id": "061a954b-5e60-4649-ab1a-98f38fed98ec",
-      "date": "2026-06-03",
-      "name": "农场",
-      "category": "娱乐",
-      "amount": 30,
-      "createdAt": "2026-06-02T19:53:11.097Z",
-      "updatedAt": "2026-06-02T21:15:52.898Z"
     },
     {
       "id": "64507c22-42a2-471f-becd-a2593b7d5e19",
