@@ -1,7 +1,25 @@
 {
-  "exportedAt": "2026-06-04T18:48:32.071Z",
+  "exportedAt": "2026-06-04T19:07:00.488Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "4de2ff53-9837-41b2-9292-9a55c342792b",
+      "date": "2026-06-04",
+      "name": "紫燕百味鸡",
+      "category": "食品",
+      "amount": 23,
+      "createdAt": "2026-06-04T19:07:00.443Z",
+      "updatedAt": "2026-06-04T19:07:00.443Z"
+    },
+    {
+      "id": "af4e3ae3-099b-4c84-80b2-e4d2d379ba6e",
+      "date": "2026-06-04",
+      "name": "地铁",
+      "category": "交通",
+      "amount": 6.5,
+      "createdAt": "2026-06-04T19:05:40.267Z",
+      "updatedAt": "2026-06-04T19:05:40.267Z"
+    },
     {
       "id": "d99db1c4-cb65-4a20-abe7-6e07104bab10",
       "date": "2026-06-04",
