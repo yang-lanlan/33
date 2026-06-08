@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-06-08T04:09:34.176Z",
+  "exportedAt": "2026-06-08T04:09:48.030Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "5eacaecd-147d-44df-8c7c-76f74197013d",
+      "date": "2026-06-11",
+      "name": "酒店",
+      "category": "娱乐",
+      "amount": 140,
+      "createdAt": "2026-06-08T04:09:47.982Z",
+      "updatedAt": "2026-06-08T04:09:47.982Z"
+    },
     {
       "id": "71ce2201-32fb-49d6-b1ae-7cb995e24567",
       "date": "2026-06-10",
