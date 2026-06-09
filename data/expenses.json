@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-06-09T17:17:18.514Z",
+  "exportedAt": "2026-06-09T19:17:27.647Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -19,6 +19,15 @@
       "amount": 150,
       "createdAt": "2026-06-08T04:09:34.128Z",
       "updatedAt": "2026-06-08T04:09:34.128Z"
+    },
+    {
+      "id": "44ea3dd8-e0d9-4d67-a067-b83f5e08d43b",
+      "date": "2026-06-09",
+      "name": "大巴",
+      "category": "交通",
+      "amount": 38,
+      "createdAt": "2026-06-08T04:10:34.204Z",
+      "updatedAt": "2026-06-09T19:17:27.605Z"
     },
     {
       "id": "f348cbbc-5eb3-4736-a48c-3b4c8240966c",
@@ -100,15 +109,6 @@
       "amount": -182,
       "createdAt": "2026-06-08T18:55:36.815Z",
       "updatedAt": "2026-06-08T18:55:36.815Z"
-    },
-    {
-      "id": "44ea3dd8-e0d9-4d67-a067-b83f5e08d43b",
-      "date": "2026-06-08",
-      "name": "大巴",
-      "category": "交通",
-      "amount": 38,
-      "createdAt": "2026-06-08T04:10:34.204Z",
-      "updatedAt": "2026-06-08T04:10:34.204Z"
     },
     {
       "id": "d13ef811-e3d4-4458-9e66-ed3bfffbe5bb",
