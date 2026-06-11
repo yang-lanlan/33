@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-06-11T22:23:02.546Z",
+  "exportedAt": "2026-06-11T23:32:47.404Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -19,6 +19,15 @@
       "amount": 40,
       "createdAt": "2026-06-11T22:22:51.171Z",
       "updatedAt": "2026-06-11T22:22:51.171Z"
+    },
+    {
+      "id": "c86a51e4-427d-4f3d-a7f3-d34b723139fe",
+      "date": "2026-06-11",
+      "name": "打车",
+      "category": "交通",
+      "amount": 14,
+      "createdAt": "2026-06-11T23:32:47.353Z",
+      "updatedAt": "2026-06-11T23:32:47.353Z"
     },
     {
       "id": "bd8967ca-b94a-4cfd-843d-fb3cabe079be",
