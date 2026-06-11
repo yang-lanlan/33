@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-06-10T20:00:09.369Z",
+  "exportedAt": "2026-06-11T01:00:47.403Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -10,6 +10,15 @@
       "amount": 140,
       "createdAt": "2026-06-08T04:09:47.982Z",
       "updatedAt": "2026-06-08T04:09:47.982Z"
+    },
+    {
+      "id": "4a4a4c6f-7484-48fc-8c7d-bf1358477667",
+      "date": "2026-06-10",
+      "name": "水果塔",
+      "category": "食品",
+      "amount": 11,
+      "createdAt": "2026-06-11T01:00:47.353Z",
+      "updatedAt": "2026-06-11T01:00:47.353Z"
     },
     {
       "id": "c698d954-1619-4021-ac9a-aa556eeb5e99",
