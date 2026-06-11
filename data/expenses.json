@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-06-11T17:50:08.039Z",
+  "exportedAt": "2026-06-11T17:50:26.940Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "e977657b-a5aa-4bcb-844f-4c15b65c2329",
+      "date": "2026-06-11",
+      "name": "晕车药",
+      "category": "食品",
+      "amount": 8,
+      "createdAt": "2026-06-11T17:50:26.890Z",
+      "updatedAt": "2026-06-11T17:50:26.890Z"
+    },
     {
       "id": "2bb552ca-6f97-45c6-aa6d-996139921407",
       "date": "2026-06-11",
