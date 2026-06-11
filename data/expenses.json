@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-06-11T17:33:13.928Z",
+  "exportedAt": "2026-06-11T17:50:08.039Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "2bb552ca-6f97-45c6-aa6d-996139921407",
+      "date": "2026-06-11",
+      "name": "冰箱贴",
+      "category": "百货",
+      "amount": 6,
+      "createdAt": "2026-06-11T17:50:07.992Z",
+      "updatedAt": "2026-06-11T17:50:07.992Z"
+    },
     {
       "id": "374984f7-435e-4595-b549-ffff1e816ca8",
       "date": "2026-06-11",
