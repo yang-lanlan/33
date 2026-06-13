@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-06-13T01:40:50.231Z",
+  "exportedAt": "2026-06-13T02:16:08.936Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "29d61bad-6a7f-4e96-bde6-9700d9b48217",
+      "date": "2026-06-12",
+      "name": "茶瀑布",
+      "category": "食品",
+      "amount": 18,
+      "createdAt": "2026-06-13T02:16:08.886Z",
+      "updatedAt": "2026-06-13T02:16:08.886Z"
+    },
     {
       "id": "f5fa541f-a6e6-4999-bf04-6c499fe78065",
       "date": "2026-06-12",
