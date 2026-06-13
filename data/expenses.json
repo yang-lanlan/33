@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-06-13T15:17:08.743Z",
+  "exportedAt": "2026-06-13T15:17:13.591Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "afa71b42-58b5-4c5e-b837-ba7fa7e87c0b",
+      "date": "2026-06-13",
+      "name": "贝果",
+      "category": "食品",
+      "amount": 8,
+      "createdAt": "2026-06-13T15:17:13.540Z",
+      "updatedAt": "2026-06-13T15:17:13.540Z"
+    },
     {
       "id": "428a0ec8-749f-45e4-81c3-e0cb737bd78b",
       "date": "2026-06-13",
