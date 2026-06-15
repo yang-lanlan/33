@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-06-15T17:57:55.378Z",
+  "exportedAt": "2026-06-15T18:10:25.085Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -55,6 +55,15 @@
       "amount": 17,
       "createdAt": "2026-06-15T00:23:40.419Z",
       "updatedAt": "2026-06-15T00:23:40.419Z"
+    },
+    {
+      "id": "baee4fed-48f7-4e64-adaa-33205a85b52d",
+      "date": "2026-06-15",
+      "name": "早茶",
+      "category": "食品",
+      "amount": 42,
+      "createdAt": "2026-06-15T18:10:25.035Z",
+      "updatedAt": "2026-06-15T18:10:25.035Z"
     },
     {
       "id": "cba321d0-95c0-491c-baa9-e9457ae68e0d",
