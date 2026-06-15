@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-06-13T23:33:30.171Z",
+  "exportedAt": "2026-06-15T00:23:40.468Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "db490d79-55a4-4f40-9779-43c2d1468414",
+      "date": "2026-06-17",
+      "name": "大巴",
+      "category": "交通",
+      "amount": 17,
+      "createdAt": "2026-06-15T00:23:40.419Z",
+      "updatedAt": "2026-06-15T00:23:40.419Z"
+    },
     {
       "id": "60808bca-d81d-41db-b1db-03f42aec7352",
       "date": "2026-06-13",
