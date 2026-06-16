@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-06-16T21:14:19.741Z",
+  "exportedAt": "2026-06-16T21:14:29.708Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -55,6 +55,15 @@
       "amount": 17,
       "createdAt": "2026-06-15T00:23:40.419Z",
       "updatedAt": "2026-06-15T00:23:40.419Z"
+    },
+    {
+      "id": "7d43dc74-fa78-4010-be51-5ba32f95bee6",
+      "date": "2026-06-16",
+      "name": "回锅肉",
+      "category": "食品",
+      "amount": 13,
+      "createdAt": "2026-06-16T21:14:29.665Z",
+      "updatedAt": "2026-06-16T21:14:29.665Z"
     },
     {
       "id": "bf91dd50-e897-4234-b57a-69b80159728d",
