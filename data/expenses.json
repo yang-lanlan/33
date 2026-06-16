@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-06-16T17:05:04.921Z",
+  "exportedAt": "2026-06-16T21:14:19.741Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -55,6 +55,15 @@
       "amount": 17,
       "createdAt": "2026-06-15T00:23:40.419Z",
       "updatedAt": "2026-06-15T00:23:40.419Z"
+    },
+    {
+      "id": "bf91dd50-e897-4234-b57a-69b80159728d",
+      "date": "2026-06-16",
+      "name": "茉莉奶白",
+      "category": "食品",
+      "amount": 7,
+      "createdAt": "2026-06-16T21:14:19.690Z",
+      "updatedAt": "2026-06-16T21:14:19.690Z"
     },
     {
       "id": "2db18e73-33f2-4a37-b1ab-0ab7e4857fa6",
