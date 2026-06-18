@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-06-18T14:36:42.525Z",
+  "exportedAt": "2026-06-18T14:36:52.468Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -46,6 +46,15 @@
       "amount": 122,
       "createdAt": "2026-06-15T00:24:05.531Z",
       "updatedAt": "2026-06-15T00:24:05.531Z"
+    },
+    {
+      "id": "8e4fe377-2323-4957-950b-3ed2bdb20578",
+      "date": "2026-06-17",
+      "name": "Uber会员",
+      "category": "食品",
+      "amount": 18,
+      "createdAt": "2026-06-18T14:36:52.414Z",
+      "updatedAt": "2026-06-18T14:36:52.414Z"
     },
     {
       "id": "ad08a0cf-f42b-45c2-8fc9-d0b5c1466eff",
