@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-06-18T23:11:42.565Z",
+  "exportedAt": "2026-06-19T15:52:09.992Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -19,6 +19,15 @@
       "amount": 122,
       "createdAt": "2026-06-15T00:25:10.797Z",
       "updatedAt": "2026-06-15T00:25:10.797Z"
+    },
+    {
+      "id": "1a2fe2d6-233c-4c07-b434-195d8e0d40fd",
+      "date": "2026-06-19",
+      "name": "墨西哥菜",
+      "category": "食品",
+      "amount": 30.5,
+      "createdAt": "2026-06-19T15:52:09.938Z",
+      "updatedAt": "2026-06-19T15:52:09.938Z"
     },
     {
       "id": "1a714874-8a76-4b9a-adb3-91680496d1f2",
