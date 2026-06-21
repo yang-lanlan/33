@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-06-21T03:25:43.738Z",
+  "exportedAt": "2026-06-21T20:01:59.509Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -10,6 +10,15 @@
       "amount": 35,
       "createdAt": "2026-06-20T23:30:58.764Z",
       "updatedAt": "2026-06-20T23:30:58.764Z"
+    },
+    {
+      "id": "1f8ddff0-09b0-432d-b9d0-dee7e9432439",
+      "date": "2026-06-21",
+      "name": "肉夹馍",
+      "category": "食品",
+      "amount": 29,
+      "createdAt": "2026-06-21T20:01:59.453Z",
+      "updatedAt": "2026-06-21T20:01:59.453Z"
     },
     {
       "id": "386be1b7-90c7-421f-8ac2-8613d0db4420",
