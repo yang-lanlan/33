@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-06-25T21:01:39.955Z",
+  "exportedAt": "2026-06-25T21:29:40.490Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "fe271567-9ac5-4730-9e75-2a5bb4fdfaf9",
+      "date": "2026-06-25",
+      "name": "肠粉",
+      "category": "食品",
+      "amount": 9,
+      "createdAt": "2026-06-25T21:29:40.431Z",
+      "updatedAt": "2026-06-25T21:29:40.431Z"
+    },
     {
       "id": "c01f1bb3-887d-4790-9349-423959a4d49c",
       "date": "2026-06-25",
