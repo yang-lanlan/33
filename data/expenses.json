@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-06-28T21:53:09.377Z",
+  "exportedAt": "2026-06-28T21:57:28.415Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "17be0d33-6089-4bb2-a214-e095a11d2770",
+      "date": "2026-06-28",
+      "name": "芒果",
+      "category": "食品",
+      "amount": 14,
+      "createdAt": "2026-06-28T21:57:28.358Z",
+      "updatedAt": "2026-06-28T21:57:28.358Z"
+    },
     {
       "id": "1a7960ad-6fe4-415d-82fb-554ea1a0661f",
       "date": "2026-06-28",
