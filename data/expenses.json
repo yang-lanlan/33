@@ -1,15 +1,15 @@
 {
-  "exportedAt": "2026-06-29T04:47:59.767Z",
+  "exportedAt": "2026-06-29T04:48:09.402Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
       "id": "6da9cfe6-1127-41ef-9f8b-b7f040a92d7c",
       "date": "2026-06-29",
-      "name": "中介费40",
+      "name": "中介费",
       "category": "其他",
       "amount": 40,
       "createdAt": "2026-06-29T04:47:59.751Z",
-      "updatedAt": "2026-06-29T04:47:59.751Z"
+      "updatedAt": "2026-06-29T04:48:09.374Z"
     },
     {
       "id": "17be0d33-6089-4bb2-a214-e095a11d2770",
