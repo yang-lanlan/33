@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-07-04T06:31:37.667Z",
+  "exportedAt": "2026-07-04T18:03:11.893Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "9e952fb1-4599-4cd5-bb47-aa2bad897688",
+      "date": "2026-07-04",
+      "name": "音响",
+      "category": "百货",
+      "amount": 43,
+      "createdAt": "2026-07-04T18:03:11.853Z",
+      "updatedAt": "2026-07-04T18:03:11.853Z"
+    },
     {
       "id": "ee5495d4-6da6-4909-a658-c65ca16b945a",
       "date": "2026-07-04",
