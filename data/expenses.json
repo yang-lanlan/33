@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-07-05T22:44:40.355Z",
+  "exportedAt": "2026-07-06T00:04:55.551Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "e2d47a45-7920-4003-871e-3c8769914eb4",
+      "date": "2026-07-05",
+      "name": "吸毒",
+      "category": "健康",
+      "amount": 7,
+      "createdAt": "2026-07-06T00:04:55.493Z",
+      "updatedAt": "2026-07-06T00:04:55.493Z"
+    },
     {
       "id": "ca4ee236-dc17-417e-a787-5c3d1cbff706",
       "date": "2026-07-05",
