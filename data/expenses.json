@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-07-06T01:20:58.809Z",
+  "exportedAt": "2026-07-07T01:58:50.954Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "bf5af00b-62e1-44a9-adad-765fcd1f0149",
+      "date": "2026-07-06",
+      "name": "yami",
+      "category": "食品",
+      "amount": 37,
+      "createdAt": "2026-07-07T01:58:50.895Z",
+      "updatedAt": "2026-07-07T01:58:50.895Z"
+    },
     {
       "id": "3bd72f11-52c0-4774-9e5e-0e2d5d23128d",
       "date": "2026-07-05",
