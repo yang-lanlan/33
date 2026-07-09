@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-07-08T21:12:49.250Z",
+  "exportedAt": "2026-07-09T00:45:56.317Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "342a2055-e56f-412c-8979-3587f7afd302",
+      "date": "2026-07-08",
+      "name": "coco",
+      "category": "食品",
+      "amount": 7.5,
+      "createdAt": "2026-07-09T00:45:56.258Z",
+      "updatedAt": "2026-07-09T00:45:56.258Z"
+    },
     {
       "id": "e56114e5-0e5b-4324-85b4-295a71550cac",
       "date": "2026-07-08",
