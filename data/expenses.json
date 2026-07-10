@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-07-10T17:00:19.953Z",
+  "exportedAt": "2026-07-10T17:00:47.422Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "36484835-a9bc-4578-8fa7-c3bbcaab9a3e",
+      "date": "2026-07-10",
+      "name": "柠檬茶",
+      "category": "食品",
+      "amount": 15,
+      "createdAt": "2026-07-10T17:00:47.363Z",
+      "updatedAt": "2026-07-10T17:00:47.363Z"
+    },
     {
       "id": "38e92609-c53a-4b3f-b4de-9345067ffc96",
       "date": "2026-07-09",
@@ -19,6 +28,15 @@
       "amount": 25,
       "createdAt": "2026-07-09T14:25:38.862Z",
       "updatedAt": "2026-07-09T14:25:38.862Z"
+    },
+    {
+      "id": "8e7bfe9a-53e2-43ff-9971-202e3cb9631b",
+      "date": "2026-07-08",
+      "name": "剪头发",
+      "category": "健康",
+      "amount": 15,
+      "createdAt": "2026-07-10T17:00:39.363Z",
+      "updatedAt": "2026-07-10T17:00:39.363Z"
     },
     {
       "id": "8b7cec5b-1945-46d5-9ac3-b76fa7abed48",
