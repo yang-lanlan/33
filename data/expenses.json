@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-07-10T19:47:30.685Z",
+  "exportedAt": "2026-07-10T20:57:36.018Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "44fe9268-f711-4bf2-acb2-0c7910e4676f",
+      "date": "2026-07-10",
+      "name": "挂号费",
+      "category": "健康",
+      "amount": 30,
+      "createdAt": "2026-07-10T20:57:35.953Z",
+      "updatedAt": "2026-07-10T20:57:35.953Z"
+    },
     {
       "id": "a26585e4-ab53-4a70-bec3-06c5258e1fe3",
       "date": "2026-07-10",
