@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-07-10T22:17:16.190Z",
+  "exportedAt": "2026-07-11T13:23:57.006Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "eb13c907-7cd2-4c16-a1f7-d32ca4f081e8",
+      "date": "2026-07-11",
+      "name": "呼吸机租金",
+      "category": "健康",
+      "amount": 8,
+      "createdAt": "2026-07-11T13:23:56.950Z",
+      "updatedAt": "2026-07-11T13:23:56.950Z"
+    },
     {
       "id": "bb57c453-2227-43f4-a0ad-7f720239763f",
       "date": "2026-07-10",
