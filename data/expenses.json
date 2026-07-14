@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-07-14T14:11:15.275Z",
+  "exportedAt": "2026-07-14T15:51:04.959Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "3b29796d-221e-489b-ae75-1d15c8887a84",
+      "date": "2026-07-14",
+      "name": "乐乐茶",
+      "category": "食品",
+      "amount": 17,
+      "createdAt": "2026-07-14T15:51:04.899Z",
+      "updatedAt": "2026-07-14T15:51:04.899Z"
+    },
     {
       "id": "d51c08ac-f811-4439-a83f-334c873b9ab8",
       "date": "2026-07-14",
