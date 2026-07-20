@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-07-19T23:09:50.551Z",
+  "exportedAt": "2026-07-20T16:09:59.289Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "ecfbfb16-ab6d-4a2a-8e95-1dc1073b137b",
+      "date": "2026-07-20",
+      "name": "麦当劳",
+      "category": "食品",
+      "amount": 7.5,
+      "createdAt": "2026-07-20T16:09:59.229Z",
+      "updatedAt": "2026-07-20T16:09:59.229Z"
+    },
     {
       "id": "d1e45557-a726-4015-a4e2-71a7a1830639",
       "date": "2026-07-19",
