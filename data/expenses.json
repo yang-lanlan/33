@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-07-24T04:08:39.674Z",
+  "exportedAt": "2026-07-24T04:09:15.362Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "8ed7978b-1481-424d-b107-f4bc6c35882a",
+      "date": "2026-07-24",
+      "name": "网络开户",
+      "category": "卖淫",
+      "amount": -50,
+      "createdAt": "2026-07-24T04:09:15.302Z",
+      "updatedAt": "2026-07-24T04:09:15.302Z"
+    },
     {
       "id": "1b8d3db7-7345-41f9-b25b-c7c08976f25f",
       "date": "2026-07-23",
