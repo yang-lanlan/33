@@ -1,15 +1,15 @@
 {
-  "exportedAt": "2026-07-24T04:10:47.909Z",
+  "exportedAt": "2026-07-24T04:10:55.951Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
       "id": "8e4a9eca-eac3-4399-a638-901f4c7c8e69",
       "date": "2026-07-29",
-      "name": "6个月定期",
+      "name": "6个月定期利息",
       "category": "卖淫",
       "amount": -780,
       "createdAt": "2026-07-24T04:10:47.850Z",
-      "updatedAt": "2026-07-24T04:10:47.850Z"
+      "updatedAt": "2026-07-24T04:10:55.918Z"
     },
     {
       "id": "8ed7978b-1481-424d-b107-f4bc6c35882a",
