@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-26T16:30:21.802Z",
+  "exportedAt": "2026-07-26T17:57:35.768Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -10,6 +10,15 @@
       "amount": -780,
       "createdAt": "2026-07-24T04:10:47.850Z",
       "updatedAt": "2026-07-24T04:10:55.918Z"
+    },
+    {
+      "id": "1c9e025c-b062-4bd2-b30f-2e4386ec6889",
+      "date": "2026-07-26",
+      "name": "uber返利",
+      "category": "卖淫",
+      "amount": -15,
+      "createdAt": "2026-07-26T17:57:35.707Z",
+      "updatedAt": "2026-07-26T17:57:35.707Z"
     },
     {
       "id": "aefafa33-b328-4557-bfd5-6fea25951787",
