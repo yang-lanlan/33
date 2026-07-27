@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-26T17:58:07.536Z",
+  "exportedAt": "2026-07-27T02:53:34.887Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -10,6 +10,15 @@
       "amount": -780,
       "createdAt": "2026-07-24T04:10:47.850Z",
       "updatedAt": "2026-07-24T04:10:55.918Z"
+    },
+    {
+      "id": "f2673638-d9f1-48fa-a3fa-cedbe009a5eb",
+      "date": "2026-07-26",
+      "name": "垃圾袋",
+      "category": "百货",
+      "amount": 34,
+      "createdAt": "2026-07-27T02:53:34.825Z",
+      "updatedAt": "2026-07-27T02:53:34.825Z"
     },
     {
       "id": "a33322f4-a919-4602-bb28-27a9e2c5e08e",
