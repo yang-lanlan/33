@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-28T21:47:46.954Z",
+  "exportedAt": "2026-07-28T23:12:29.577Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -10,6 +10,15 @@
       "amount": -780,
       "createdAt": "2026-07-24T04:10:47.850Z",
       "updatedAt": "2026-07-24T04:10:55.918Z"
+    },
+    {
+      "id": "30c0bcae-7044-4bfe-8e8a-0fbb182c1256",
+      "date": "2026-07-28",
+      "name": "鞋",
+      "category": "其他",
+      "amount": 41,
+      "createdAt": "2026-07-28T23:12:29.512Z",
+      "updatedAt": "2026-07-28T23:12:29.512Z"
     },
     {
       "id": "62eb5585-0857-4496-9ba6-2ffa311d838a",
