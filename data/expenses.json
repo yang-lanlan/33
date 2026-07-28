@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-28T21:47:32.605Z",
+  "exportedAt": "2026-07-28T21:47:46.954Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -10,6 +10,15 @@
       "amount": -780,
       "createdAt": "2026-07-24T04:10:47.850Z",
       "updatedAt": "2026-07-24T04:10:55.918Z"
+    },
+    {
+      "id": "62eb5585-0857-4496-9ba6-2ffa311d838a",
+      "date": "2026-07-28",
+      "name": "拉夫劳伦",
+      "category": "其他",
+      "amount": 280,
+      "createdAt": "2026-07-28T21:47:46.885Z",
+      "updatedAt": "2026-07-28T21:47:46.885Z"
     },
     {
       "id": "d9b37df7-606e-4bdc-a95b-5e1a134de15f",
