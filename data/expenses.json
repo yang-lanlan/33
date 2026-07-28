@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-27T20:37:48.482Z",
+  "exportedAt": "2026-07-28T21:47:32.605Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -10,6 +10,15 @@
       "amount": -780,
       "createdAt": "2026-07-24T04:10:47.850Z",
       "updatedAt": "2026-07-24T04:10:55.918Z"
+    },
+    {
+      "id": "d9b37df7-606e-4bdc-a95b-5e1a134de15f",
+      "date": "2026-07-28",
+      "name": "lululemon",
+      "category": "其他",
+      "amount": 92,
+      "createdAt": "2026-07-28T21:47:32.535Z",
+      "updatedAt": "2026-07-28T21:47:32.535Z"
     },
     {
       "id": "93d2e3e2-0e18-4120-873f-69707f6bc99b",
