@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-29T01:22:27.407Z",
+  "exportedAt": "2026-07-29T03:18:49.992Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -10,6 +10,15 @@
       "amount": -780,
       "createdAt": "2026-07-24T04:10:47.850Z",
       "updatedAt": "2026-07-24T04:10:55.918Z"
+    },
+    {
+      "id": "f92ee8cd-72ca-4156-a3a3-8c3f237973e5",
+      "date": "2026-07-28",
+      "name": "宜家",
+      "category": "百货",
+      "amount": 105,
+      "createdAt": "2026-07-29T03:18:49.938Z",
+      "updatedAt": "2026-07-29T03:18:49.938Z"
     },
     {
       "id": "f5af939e-3dfe-4fc2-a2ef-e73770962dbe",
