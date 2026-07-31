@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-31T19:25:00.115Z",
+  "exportedAt": "2026-07-31T20:15:36.967Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -82,6 +82,15 @@
       "amount": 92,
       "createdAt": "2026-07-28T21:47:32.535Z",
       "updatedAt": "2026-07-28T21:47:32.535Z"
+    },
+    {
+      "id": "11edbc79-cb3e-4597-b32f-13233467ab7a",
+      "date": "2026-07-27",
+      "name": "韩式牛排锅",
+      "category": "食品",
+      "amount": 66,
+      "createdAt": "2026-07-31T20:15:36.915Z",
+      "updatedAt": "2026-07-31T20:15:36.915Z"
     },
     {
       "id": "93d2e3e2-0e18-4120-873f-69707f6bc99b",
