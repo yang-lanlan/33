@@ -48,6 +48,11 @@
     .total-row td:first-child { border-left: 3px solid #2563eb; }
 
     #status { min-height: 22px; font-size: .85rem; color: #4b5563; text-align: center; margin-top: 8px; font-weight: 500; }
+
+    .special { margin-top: 16px; border: 1px solid #e5e7eb; border-radius: 10px; padding: 12px; background: #fffdf7; }
+    .special h2 { color: #92400e; }
+    .special .records { max-height: 260px; background: #fff; }
+    .amount-special { color: #b45309; font-weight: 700; }
   </style>
 </head>
 <body>
@@ -69,7 +74,7 @@
           <option value="卖淫">卖淫</option>
         </select>
       </label>
-      <label>消费金额（USD）<input id="amount" name="amount" type="number" inputmode="decimal" step="0.01" required /></label>
+      <label>消费金额（USD）<input id="amount" name="amount" type="number" inputmode="decimal" step="0.1" required /></label>
       <div class="btn-row">
         <button id="submit-btn" type="submit" disabled>正在连接云端...</button>
         <button id="cancel-edit-btn" type="button" class="secondary" style="display:none;">取消修改</button>
@@ -107,6 +112,23 @@
         </tbody>
       </table>
     </section>
+
+    <section class="special">
+      <h2>特殊支出（不参与统计、不分类）</h2>
+      <form id="special-form" autocomplete="off">
+        <label>日期<input id="special-date" name="date" type="date" required /></label>
+        <label>名称<input id="special-name" name="name" type="text" required /></label>
+        <label>金额（USD）<input id="special-amount" name="amount" type="number" inputmode="decimal" step="0.1" required /></label>
+        <div class="btn-row">
+          <button id="special-submit-btn" type="submit" disabled>正在连接云端...</button>
+          <button id="special-cancel-btn" type="button" class="secondary" style="display:none;">取消修改</button>
+        </div>
+      </form>
+      <div id="special-summary" class="stats-summary">暂无特殊支出</div>
+      <section id="special-records" class="records">
+        <div style="text-align:center; padding: 20px; color: #6b7280;">暂无特殊支出。</div>
+      </section>
+    </section>
   </main>
 
   <script>
@@ -127,7 +149,10 @@
     const APP_TIMEZONE = 'America/New_York';
 
     let currentRecords = [];
+    let specialRecords = [];
     let editingId = null;
+    let editingSpecialId = null;
+    let amountManuallyEdited = false;
 
     const form = document.querySelector('#expense-form');
     const submitBtn = document.querySelector('#submit-btn');
@@ -144,6 +169,15 @@
     const statsSummaryEl = document.querySelector('#stats-summary');
     const statsBodyEl = document.querySelector('#stats-body');
 
+    const specialForm = document.querySelector('#special-form');
+    const specialDateInput = document.querySelector('#special-date');
+    const specialNameInput = document.querySelector('#special-name');
+    const specialAmountInput = document.querySelector('#special-amount');
+    const specialSubmitBtn = document.querySelector('#special-submit-btn');
+    const specialCancelBtn = document.querySelector('#special-cancel-btn');
+    const specialSummaryEl = document.querySelector('#special-summary');
+    const specialRecordsContainer = document.querySelector('#special-records');
+
     const formatDateInTimezone = (date = new Date(), timeZone = APP_TIMEZONE) => {
       const formatter = new Intl.DateTimeFormat('en-CA', {
         timeZone,
@@ -157,6 +191,7 @@
     const getTodayInEastern = () => formatDateInTimezone(new Date(), APP_TIMEZONE);
     const today = getTodayInEastern();
     dateInput.value = today;
+    specialDateInput.value = today;
 
     const categoryRules = {
       '食品': ['weee', 'wf', 'af', 'yami', 'wholefood', 'wholefoods', 'acme', '缺德舅', '大华', '日料', '寿司', '海底捞', '火锅', '星巴克', '麦当劳', '冰块'],
@@ -164,7 +199,21 @@
       '交通': ['地铁', '公交', '大巴', '单车', '机票', '船票', '打车'],
       '娱乐': ['嫖娼', '酒店', '剧本杀'],
       '健康': ['挂号费', '心理咨询', '吸毒', '减肥针', '呼吸机'],
-      '衣物': ['优衣库', '拉夫劳伦', 'lulu', '北面', '外套', '裤子', '衣服', '鞋', '袜子', '内裤', '帽子', '围巾']
+      '衣物': ['优衣库', 'lulu', '拉夫劳伦', '北面', 'nike', '阿迪', '衣服', '外套', '裤子', '包', '鞋', '袜子', '内裤', '帽子', '围巾']
+    };
+
+    // 消费名称 -> 自动填充金额
+    const nameAmountRules = {
+      '心理咨询': 8
+    };
+
+    const inferAmountFromName = (name) => {
+      const inputValue = String(name || '').trim().toLowerCase();
+      if (!inputValue) return null;
+      for (const [keyword, amount] of Object.entries(nameAmountRules)) {
+        if (inputValue.includes(keyword.toLowerCase())) return amount;
+      }
+      return null;
     };
 
     const inferCategoryFromName = (name) => {
@@ -198,7 +247,14 @@
       }
     };
 
+    amountInput.addEventListener('input', () => { amountManuallyEdited = true; });
+
     nameInput.addEventListener('input', (e) => {
+      const inferredAmount = inferAmountFromName(e.target.value);
+      if (inferredAmount !== null && !amountManuallyEdited) {
+        amountInput.value = round1(inferredAmount);
+      }
+
       const inferredCategory = inferCategoryFromName(e.target.value);
       if (!inferredCategory) return;
 
@@ -216,8 +272,9 @@
       return new TextDecoder('utf-8').decode(bytes);
     };
 
-    const formatUSD = (n) => `$${Number(n).toFixed(2)}`;
-    const formatCNY = (n) => `¥${Number(n).toFixed(2)}`;
+    const round1 = (n) => Math.round(Number(n || 0) * 10) / 10;
+    const formatUSD = (n) => `$${round1(n).toFixed(1)}`;
+    const formatCNY = (n) => `¥${round1(n).toFixed(1)}`;
     const usdToCny = (usd) => Number(usd) * USD_TO_CNY;
 
     const parseDateForSort = (dateString) => {
@@ -231,20 +288,20 @@
       return String(b.updatedAt).localeCompare(String(a.updatedAt));
     });
 
-    const toCsv = (records) => {
+    const toCsv = (records, specials = []) => {
       const header = 'date,name,category,amount_usd,amount_cny';
-      const sortedRecords = sortRecords(records);
-      const rows = sortedRecords.map((r) => {
-        const safe = (v) => `"${String(v).replaceAll('"', '""')}"`;
-        return [
-          safe(r.date),
-          safe(r.name),
-          safe(r.category),
-          safe(Number(r.amount).toFixed(2)),
-          safe(usdToCny(r.amount).toFixed(2))
-        ].join(',');
-      });
-      return [header, ...rows].join('\n');
+      const safe = (v) => `"${String(v).replaceAll('"', '""')}"`;
+      const toRow = (r, category) => [
+        safe(r.date),
+        safe(r.name),
+        safe(category),
+        safe(round1(r.amount).toFixed(1)),
+        safe(round1(usdToCny(r.amount)).toFixed(1))
+      ].join(',');
+
+      const rows = sortRecords(records).map((r) => toRow(r, r.category));
+      const specialRows = sortRecords(specials).map((r) => toRow(r, '特殊支出'));
+      return [header, ...rows, ...specialRows].join('\n');
     };
 
     const normalizeRecord = (raw) => ({
@@ -252,7 +309,16 @@
       date: raw.date,
       name: raw.name,
       category: raw.category,
-      amount: Number(raw.amount || 0),
+      amount: round1(raw.amount),
+      createdAt: raw.createdAt || new Date().toISOString(),
+      updatedAt: raw.updatedAt || raw.createdAt || new Date().toISOString()
+    });
+
+    const normalizeSpecialRecord = (raw) => ({
+      id: raw.id || crypto.randomUUID(),
+      date: raw.date,
+      name: raw.name,
+      amount: round1(raw.amount),
       createdAt: raw.createdAt || new Date().toISOString(),
       updatedAt: raw.updatedAt || raw.createdAt || new Date().toISOString()
     });
@@ -283,12 +349,14 @@
         statusEl.textContent = loadingText;
         statusEl.style.color = '#2563eb';
         submitBtn.disabled = true;
+        specialSubmitBtn.disabled = true;
 
         currentRecords = sortRecords(currentRecords);
+        specialRecords = sortRecords(specialRecords);
 
         const now = new Date().toISOString();
-        const jsonPayload = JSON.stringify({ exportedAt: now, exchangeRate: '1 USD = 7 CNY', records: currentRecords }, null, 2);
-        const csvPayload = toCsv(currentRecords);
+        const jsonPayload = JSON.stringify({ exportedAt: now, exchangeRate: '1 USD = 7 CNY', records: currentRecords, specialRecords }, null, 2);
+        const csvPayload = toCsv(currentRecords, specialRecords);
 
         await uploadContent(DEFAULT_GH.path, jsonPayload, `chore: update data ${now}`);
         await uploadContent(DEFAULT_GH.csvPath, csvPayload, `chore: update csv ${now}`);
@@ -302,6 +370,8 @@
       } finally {
         submitBtn.disabled = false;
         submitBtn.textContent = editingId ? '保存修改并同步' : '提交并同步';
+        specialSubmitBtn.disabled = false;
+        specialSubmitBtn.textContent = editingSpecialId ? '保存修改并同步' : '添加并同步';
       }
     };
 
@@ -328,6 +398,38 @@
           <div class="record-line">
             <span class="amount-usd">金额（USD）：${formatUSD(item.amount)}</span>
             <span class="amount-cny">金额（CNY）：${formatCNY(usdToCny(item.amount))}</span>
+          </div>
+        </article>
+      `).join('');
+    };
+
+    const renderSpecialRecords = () => {
+      const total = specialRecords.reduce((sum, item) => sum + Number(item.amount || 0), 0);
+
+      if (!specialRecords.length) {
+        specialSummaryEl.textContent = '暂无特殊支出。';
+        specialRecordsContainer.innerHTML = '<div style="text-align:center; padding: 20px; color: #6b7280;">暂无特殊支出。</div>';
+        return;
+      }
+
+      specialSummaryEl.innerHTML = `共 ${specialRecords.length} 笔，合计 ${formatUSD(total)} / ${formatCNY(usdToCny(total))}（不计入上方统计）`;
+
+      const sorted = sortRecords(specialRecords);
+      specialRecordsContainer.innerHTML = sorted.map((item) => `
+        <article class="record-item">
+          <div class="record-header">
+            <span class="record-name">${item.name}</span>
+            <div class="record-ops">
+              <button type="button" class="mini-btn edit-btn" onclick="editSpecialRecord('${item.id}')">修改</button>
+              <button type="button" class="mini-btn delete-btn" onclick="deleteSpecialRecord('${item.id}')">删除</button>
+            </div>
+          </div>
+          <div class="record-line">
+            <span>日期：${item.date}</span>
+          </div>
+          <div class="record-line">
+            <span class="amount-special">金额（USD）：${formatUSD(item.amount)}</span>
+            <span class="amount-special">金额（CNY）：${formatCNY(usdToCny(item.amount))}</span>
           </div>
         </article>
       `).join('');
@@ -417,6 +519,7 @@
 
     const resetFormMode = () => {
       editingId = null;
+      amountManuallyEdited = false;
       submitBtn.textContent = '提交并同步';
       cancelEditBtn.style.display = 'none';
       form.reset();
@@ -431,7 +534,8 @@
       dateInput.value = target.date;
       nameInput.value = target.name;
       categorySelect.value = target.category;
-      amountInput.value = Number(target.amount);
+      amountInput.value = round1(target.amount);
+      amountManuallyEdited = true;
       submitBtn.textContent = '保存修改并同步';
       cancelEditBtn.style.display = 'block';
       statusEl.textContent = '正在修改历史记录，保存后会同步到云端。';
@@ -452,6 +556,70 @@
       statusEl.style.color = '#4b5563';
     });
 
+    const resetSpecialFormMode = () => {
+      editingSpecialId = null;
+      specialSubmitBtn.textContent = '添加并同步';
+      specialCancelBtn.style.display = 'none';
+      specialForm.reset();
+      specialDateInput.value = getTodayInEastern();
+    };
+
+    window.editSpecialRecord = (id) => {
+      const target = specialRecords.find((item) => item.id === id);
+      if (!target) return;
+      editingSpecialId = id;
+      specialDateInput.value = target.date;
+      specialNameInput.value = target.name;
+      specialAmountInput.value = round1(target.amount);
+      specialSubmitBtn.textContent = '保存修改并同步';
+      specialCancelBtn.style.display = 'block';
+      specialNameInput.focus();
+    };
+
+    window.deleteSpecialRecord = async (id) => {
+      if (!confirm('确定要删除这条特殊支出吗？')) return;
+      specialRecords = specialRecords.filter((item) => item.id !== id);
+      renderSpecialRecords();
+      await runUpload('正在删除并同步到 GitHub...');
+    };
+
+    specialCancelBtn.addEventListener('click', () => {
+      resetSpecialFormMode();
+      statusEl.textContent = '已取消修改。';
+      statusEl.style.color = '#4b5563';
+    });
+
+    specialForm.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const nowIso = new Date().toISOString();
+
+      const record = normalizeSpecialRecord({
+        id: editingSpecialId || crypto.randomUUID(),
+        date: specialDateInput.value,
+        name: specialNameInput.value,
+        amount: specialAmountInput.value,
+        createdAt: nowIso,
+        updatedAt: nowIso
+      });
+
+      if (editingSpecialId) {
+        specialRecords = specialRecords.map((item) => {
+          if (item.id !== editingSpecialId) return item;
+          return { ...item, ...record, id: item.id, createdAt: item.createdAt || record.createdAt, updatedAt: nowIso };
+        });
+      } else {
+        specialRecords.push(record);
+      }
+
+      specialRecords = sortRecords(specialRecords);
+
+      const wasEditing = Boolean(editingSpecialId);
+      renderSpecialRecords();
+      resetSpecialFormMode();
+
+      await runUpload(wasEditing ? '正在保存修改并同步到 GitHub...' : '正在添加特殊支出并同步...');
+    });
+
     document.querySelector('#stats-apply-btn').addEventListener('click', renderStats);
 
     const loadData = async () => {
@@ -462,17 +630,22 @@
 
         if (resp.status === 404) {
           currentRecords = [];
+          specialRecords = [];
         } else if (!resp.ok) {
           throw new Error('拉取失败，可能是 Token 无效或过期');
         } else {
           const data = await resp.json();
           const content = base64ToUtf8(data.content);
-          const parsed = JSON.parse(content).records || [];
+          const payload = JSON.parse(content);
+          const parsed = payload.records || [];
+          const parsedSpecial = payload.specialRecords || [];
           currentRecords = sortRecords(parsed.map(normalizeRecord));
+          specialRecords = sortRecords(parsedSpecial.map(normalizeSpecialRecord));
         }
 
         renderRecords();
         renderStats();
+        renderSpecialRecords();
 
         statusEl.textContent = '✅ 已连接到云端';
         statusEl.style.color = '#059669';
@@ -480,11 +653,14 @@
 
         submitBtn.disabled = false;
         submitBtn.textContent = '提交并同步';
+        specialSubmitBtn.disabled = false;
+        specialSubmitBtn.textContent = '添加并同步';
       } catch (e) {
         recordsContainer.innerHTML = '<div style="text-align:center; padding: 20px; color: #ef4444;">拉取失败，请检查 Token。</div>';
         statusEl.textContent = '❌ 为防止覆盖数据，已禁用提交。';
         statusEl.style.color = '#ef4444';
         submitBtn.textContent = '连接失败';
+        specialSubmitBtn.textContent = '连接失败';
       }
     };
 
@@ -499,7 +675,7 @@
         finalCategory = '卖淫';
       }
 
-      let amountValue = Number(formData.get('amount'));
+      let amountValue = round1(formData.get('amount'));
 
       if (finalCategory === '卖淫' && amountValue > 0) {
         amountValue = -amountValue;
