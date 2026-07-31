@@ -44,6 +44,8 @@
     table { width: 100%; border-collapse: collapse; font-size: .88rem; }
     th, td { border-bottom: 1px solid #e5e7eb; padding: 8px 6px; text-align: left; }
     th:last-child, td:last-child { text-align: right; }
+    .total-row td { font-weight: 700; background: #eef2ff; color: #1e3a8a; border-bottom: 2px solid #c7d2fe; }
+    .total-row td:first-child { border-left: 3px solid #2563eb; }
 
     #status { min-height: 22px; font-size: .85rem; color: #4b5563; text-align: center; margin-top: 8px; font-weight: 500; }
   </style>
@@ -62,6 +64,7 @@
           <option value="健康">健康</option>
           <option value="交通">交通</option>
           <option value="娱乐">娱乐</option>
+          <option value="衣物">衣物</option>
           <option value="其他">其他</option>
           <option value="卖淫">卖淫</option>
         </select>
@@ -160,7 +163,8 @@
       '百货': ['target', 'muji', '阿里巴巴', 'ikea'],
       '交通': ['地铁', '公交', '大巴', '单车', '机票', '船票', '打车'],
       '娱乐': ['嫖娼', '酒店', '剧本杀'],
-      '健康': ['挂号费', '心理咨询', '吸毒', '减肥针', '呼吸机']
+      '健康': ['挂号费', '心理咨询', '吸毒', '减肥针', '呼吸机'],
+      '衣物': ['优衣库', '拉夫劳伦', 'lulu', '北面', '外套', '裤子', '衣服', '鞋', '袜子', '内裤', '帽子', '围巾']
     };
 
     const inferCategoryFromName = (name) => {
@@ -347,6 +351,9 @@
       const filtered = currentRecords.filter((r) => r.date >= start && r.date <= end);
       const totalAmountUsd = filtered.reduce((sum, item) => {return item.category !== '卖淫' ? sum + Number(item.amount || 0) : sum;}, 0);
       const totalAmountCny = usdToCny(totalAmountUsd);
+      // 净总计：包含“卖淫”部分的负数
+      const netTotalUsd = filtered.reduce((sum, item) => sum + Number(item.amount || 0), 0);
+      const netTotalCny = usdToCny(netTotalUsd);
       const byCategory = {};
 
       filtered.forEach((item) => {
@@ -358,8 +365,9 @@
       const dailyAvgCny = totalAmountCny / dayCount;
 
       statsSummaryEl.innerHTML = `
-        区间 ${start} ~ ${end}：总计 ${formatUSD(totalAmountUsd)} / ${formatCNY(totalAmountCny)}<br>
-        日均 ${formatUSD(dailyAvgUsd)} / ${formatCNY(dailyAvgCny)}（按 ${dayCount} 天，汇率 1:7）
+        区间 ${start} ~ ${end}：支出合计 ${formatUSD(totalAmountUsd)} / ${formatCNY(totalAmountCny)}<br>
+        日均 ${formatUSD(dailyAvgUsd)} / ${formatCNY(dailyAvgCny)}（按 ${dayCount} 天，汇率 1:7）<br>
+        总计 ${formatUSD(netTotalUsd)} / ${formatCNY(netTotalCny)}
       `;
 
       const categories = Object.entries(byCategory).sort((a, b) => b[1] - a[1]);
@@ -368,7 +376,18 @@
         return;
       }
 
-      statsBodyEl.innerHTML = categories.map(([category, amountUsd]) => {
+      const totalRowHtml = `
+        <tr class="total-row">
+          <td>总计</td>
+          <td>${formatUSD(netTotalUsd)}</td>
+          <td>${formatCNY(netTotalCny)}</td>
+          <td>${formatUSD(netTotalUsd / dayCount)}</td>
+          <td>${formatCNY(netTotalCny / dayCount)}</td>
+          <td>—</td>
+        </tr>
+      `;
+
+      const categoryRowsHtml = categories.map(([category, amountUsd]) => {
         const amountCny = usdToCny(amountUsd);
         const categoryDailyAvgUsd = amountUsd / dayCount;
         const categoryDailyAvgCny = amountCny / dayCount;
@@ -384,6 +403,8 @@
           </tr>
         `;
       }).join('');
+
+      statsBodyEl.innerHTML = totalRowHtml + categoryRowsHtml;
     };
 
     const getCurrentMonthRange = () => {
