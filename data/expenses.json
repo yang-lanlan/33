@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-08-03T03:40:02.700Z",
+  "exportedAt": "2026-08-03T03:40:13.869Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "561b7743-5ee0-4e7f-8ff4-df0f20c7f89d",
+      "date": "2026-08-02",
+      "name": "韩式排骨",
+      "category": "食品",
+      "amount": 123,
+      "createdAt": "2026-08-03T03:40:13.811Z",
+      "updatedAt": "2026-08-03T03:40:13.811Z"
+    },
     {
       "id": "1dea3f99-c0ec-4127-91eb-b7142f9e122c",
       "date": "2026-08-01",
