@@ -53,6 +53,12 @@
     .special h2 { color: #92400e; }
     .special .records { max-height: 260px; background: #fff; }
     .amount-special { color: #b45309; font-weight: 700; }
+
+    .download { margin-top: 16px; border: 1px solid #e5e7eb; border-radius: 10px; padding: 12px; background: #f6fbf8; }
+    .download h2 { color: #065f46; }
+    .download-filter { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+    #download-btn { background: #059669; }
+    #download-btn:hover { background: #047857; }
   </style>
 </head>
 <body>
@@ -129,6 +135,25 @@
         <div style="text-align:center; padding: 20px; color: #6b7280;">暂无特殊支出。</div>
       </section>
     </section>
+
+    <section class="download">
+      <h2>下载月度数据（含当月特殊支出）</h2>
+      <div class="download-filter">
+        <label>选择月份
+          <select id="download-month"></select>
+        </label>
+        <label>文件格式
+          <select id="download-format">
+            <option value="csv">CSV（Excel 可直接打开）</option>
+            <option value="json">JSON（完整原始数据）</option>
+          </select>
+        </label>
+      </div>
+      <div style="margin-top:10px;">
+        <button id="download-btn" type="button" disabled>下载该月消费数据</button>
+      </div>
+      <div id="download-hint" class="stats-summary">正在加载可下载的月份...</div>
+    </section>
   </main>
 
   <script>
@@ -177,6 +202,11 @@
     const specialCancelBtn = document.querySelector('#special-cancel-btn');
     const specialSummaryEl = document.querySelector('#special-summary');
     const specialRecordsContainer = document.querySelector('#special-records');
+
+    const downloadMonthSelect = document.querySelector('#download-month');
+    const downloadFormatSelect = document.querySelector('#download-format');
+    const downloadBtn = document.querySelector('#download-btn');
+    const downloadHintEl = document.querySelector('#download-hint');
 
     const formatDateInTimezone = (date = new Date(), timeZone = APP_TIMEZONE) => {
       const formatter = new Intl.DateTimeFormat('en-CA', {
@@ -376,6 +406,7 @@
     };
 
     const renderRecords = () => {
+      refreshDownloadMonths();
       if (!currentRecords.length) {
         recordsContainer.innerHTML = '<div style="text-align:center; padding: 20px; color: #6b7280;">暂无记录。</div>';
         return;
@@ -404,6 +435,7 @@
     };
 
     const renderSpecialRecords = () => {
+      refreshDownloadMonths();
       const total = specialRecords.reduce((sum, item) => sum + Number(item.amount || 0), 0);
 
       if (!specialRecords.length) {
@@ -434,6 +466,183 @@
         </article>
       `).join('');
     };
+
+    /* ============ 月度数据下载 ============ */
+
+    const getMonthLabel = (ym) => {
+      const [year, month] = String(ym || '').split('-');
+      if (!year || !month) return String(ym || '');
+      return `${year} 年 ${Number(month)} 月`;
+    };
+
+    const inMonth = (record, ym) => String(record?.date || '').slice(0, 7) === ym;
+
+    const getMonthData = (ym) => ({
+      records: sortRecords(currentRecords.filter((r) => inMonth(r, ym))),
+      specials: sortRecords(specialRecords.filter((r) => inMonth(r, ym)))
+    });
+
+    const sumAmount = (list) => list.reduce((sum, item) => sum + Number(item.amount || 0), 0);
+
+    // 与统计口径一致：支出合计不含“卖淫”（负数），净总计包含
+    const getMonthSummary = (records, specials) => {
+      const expenseUsd = records.reduce((sum, item) => (item.category !== '卖淫' ? sum + Number(item.amount || 0) : sum), 0);
+      const netUsd = sumAmount(records);
+      const specialUsd = sumAmount(specials);
+      return {
+        expenseUsd: round1(expenseUsd),
+        netUsd: round1(netUsd),
+        specialUsd: round1(specialUsd),
+        grandTotalUsd: round1(netUsd + specialUsd)
+      };
+    };
+
+    const updateDownloadHint = () => {
+      const ym = downloadMonthSelect.value;
+      if (!ym) {
+        downloadHintEl.textContent = '暂无可下载的数据。';
+        downloadBtn.disabled = true;
+        return;
+      }
+
+      const { records, specials } = getMonthData(ym);
+      if (!records.length && !specials.length) {
+        downloadHintEl.textContent = `${getMonthLabel(ym)}暂无任何记录。`;
+        downloadBtn.disabled = true;
+        return;
+      }
+
+      const s = getMonthSummary(records, specials);
+      downloadBtn.disabled = false;
+      downloadHintEl.innerHTML = `
+        ${getMonthLabel(ym)}：常规消费 ${records.length} 笔，支出合计 ${formatUSD(s.expenseUsd)} / ${formatCNY(usdToCny(s.expenseUsd))}<br>
+        特殊支出 ${specials.length} 笔，合计 ${formatUSD(s.specialUsd)} / ${formatCNY(usdToCny(s.specialUsd))}<br>
+        合计（含特殊支出）${formatUSD(s.grandTotalUsd)} / ${formatCNY(usdToCny(s.grandTotalUsd))}
+      `;
+    };
+
+    const refreshDownloadMonths = () => {
+      const months = new Set();
+      [...currentRecords, ...specialRecords].forEach((item) => {
+        const ym = String(item?.date || '').slice(0, 7);
+        if (/^\d{4}-\d{2}$/.test(ym)) months.add(ym);
+      });
+      months.add(getTodayInEastern().slice(0, 7));
+
+      const sorted = [...months].sort().reverse();
+      const previous = downloadMonthSelect.value;
+      downloadMonthSelect.innerHTML = sorted
+        .map((ym) => `<option value="${ym}">${getMonthLabel(ym)}</option>`)
+        .join('');
+      downloadMonthSelect.value = sorted.includes(previous) ? previous : sorted[0];
+      updateDownloadHint();
+    };
+
+    const csvCell = (v) => `"${String(v ?? '').replaceAll('"', '""')}"`;
+    const csvRow = (cells) => cells.map(csvCell).join(',');
+
+    const buildMonthCsv = (ym, records, specials) => {
+      const s = getMonthSummary(records, specials);
+      const exportedAt = new Date().toLocaleString('zh-CN', { timeZone: APP_TIMEZONE });
+      const lines = [];
+
+      lines.push(csvRow([`个人记账 · ${getMonthLabel(ym)} 消费数据`]));
+      lines.push(csvRow([`导出时间：${exportedAt}（美东时间）  汇率：1 USD = ${USD_TO_CNY} CNY`]));
+      lines.push('');
+
+      lines.push(csvRow(['记录类型', '日期', '名称', '类别', '金额（USD）', '金额（CNY）']));
+      records.forEach((r) => {
+        lines.push(csvRow(['常规消费', r.date, r.name, r.category, round1(r.amount).toFixed(1), round1(usdToCny(r.amount)).toFixed(1)]));
+      });
+      specials.forEach((r) => {
+        lines.push(csvRow(['特殊支出', r.date, r.name, '特殊支出', round1(r.amount).toFixed(1), round1(usdToCny(r.amount)).toFixed(1)]));
+      });
+      if (!records.length && !specials.length) lines.push(csvRow(['（本月无记录）']));
+
+      lines.push('');
+      lines.push(csvRow(['分类汇总（常规消费）']));
+      lines.push(csvRow(['类别', '金额（USD）', '金额（CNY）', '占比']));
+
+      const byCategory = {};
+      records.forEach((r) => {
+        byCategory[r.category] = (byCategory[r.category] || 0) + Number(r.amount || 0);
+      });
+      Object.entries(byCategory)
+        .sort((a, b) => b[1] - a[1])
+        .forEach(([category, amountUsd]) => {
+          const ratio = s.expenseUsd !== 0 ? `${(amountUsd / s.expenseUsd * 100).toFixed(1)}%` : '0.0%';
+          lines.push(csvRow([category, round1(amountUsd).toFixed(1), round1(usdToCny(amountUsd)).toFixed(1), ratio]));
+        });
+
+      lines.push('');
+      lines.push(csvRow(['总计项', '金额（USD）', '金额（CNY）']));
+      lines.push(csvRow(['常规支出合计（不含卖淫）', s.expenseUsd.toFixed(1), round1(usdToCny(s.expenseUsd)).toFixed(1)]));
+      lines.push(csvRow(['常规净总计（含卖淫）', s.netUsd.toFixed(1), round1(usdToCny(s.netUsd)).toFixed(1)]));
+      lines.push(csvRow(['特殊支出合计', s.specialUsd.toFixed(1), round1(usdToCny(s.specialUsd)).toFixed(1)]));
+      lines.push(csvRow(['合计（含特殊支出）', s.grandTotalUsd.toFixed(1), round1(usdToCny(s.grandTotalUsd)).toFixed(1)]));
+
+      return lines.join('\n');
+    };
+
+    const buildMonthJson = (ym, records, specials) => {
+      const s = getMonthSummary(records, specials);
+      return JSON.stringify({
+        month: ym,
+        exportedAt: new Date().toISOString(),
+        exchangeRate: `1 USD = ${USD_TO_CNY} CNY`,
+        summary: {
+          recordCount: records.length,
+          specialCount: specials.length,
+          expenseUsd: s.expenseUsd,
+          expenseCny: round1(usdToCny(s.expenseUsd)),
+          netUsd: s.netUsd,
+          netCny: round1(usdToCny(s.netUsd)),
+          specialUsd: s.specialUsd,
+          specialCny: round1(usdToCny(s.specialUsd)),
+          grandTotalUsd: s.grandTotalUsd,
+          grandTotalCny: round1(usdToCny(s.grandTotalUsd))
+        },
+        records,
+        specialRecords: specials
+      }, null, 2);
+    };
+
+    const triggerDownload = (content, filename, mime) => {
+      const blob = new Blob([content], { type: mime });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = filename;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    };
+
+    downloadMonthSelect.addEventListener('change', updateDownloadHint);
+
+    downloadBtn.addEventListener('click', () => {
+      const ym = downloadMonthSelect.value;
+      if (!ym) return;
+
+      const { records, specials } = getMonthData(ym);
+      if (!records.length && !specials.length) {
+        statusEl.textContent = `${getMonthLabel(ym)}没有可下载的数据。`;
+        statusEl.style.color = '#ef4444';
+        return;
+      }
+
+      if (downloadFormatSelect.value === 'json') {
+        triggerDownload(buildMonthJson(ym, records, specials), `记账-${ym}.json`, 'application/json;charset=utf-8');
+      } else {
+        // BOM 保证 Excel 打开中文不乱码
+        triggerDownload('\uFEFF' + buildMonthCsv(ym, records, specials), `记账-${ym}.csv`, 'text/csv;charset=utf-8');
+      }
+
+      statusEl.textContent = `✅ 已下载 ${getMonthLabel(ym)} 数据（含 ${specials.length} 笔特殊支出）`;
+      statusEl.style.color = '#059669';
+      setTimeout(() => { statusEl.textContent = ''; }, 3000);
+    });
 
     const daysBetweenInclusive = (start, end) => {
       const ms = new Date(`${end}T00:00:00`) - new Date(`${start}T00:00:00`);
@@ -661,6 +870,7 @@
         statusEl.style.color = '#ef4444';
         submitBtn.textContent = '连接失败';
         specialSubmitBtn.textContent = '连接失败';
+        refreshDownloadMonths();
       }
     };
 
