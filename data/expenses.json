@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-08-05T17:31:23.995Z",
+  "exportedAt": "2026-08-05T22:29:15.741Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "14e7fcf2-1aff-465c-b457-4cf27bc4c690",
+      "date": "2026-08-05",
+      "name": "牙膏",
+      "category": "健康",
+      "amount": 14,
+      "createdAt": "2026-08-05T22:29:15.686Z",
+      "updatedAt": "2026-08-05T22:29:15.686Z"
+    },
     {
       "id": "70c4f50a-f51a-4815-b204-c2a7d75ec0f6",
       "date": "2026-08-05",
