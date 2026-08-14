@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-08-14T03:33:11.894Z",
+  "exportedAt": "2026-08-14T03:35:18.280Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "4aa5ee18-0ac8-4d11-b301-166a047fdbee",
+      "date": "2026-08-13",
+      "name": "boa开户",
+      "category": "卖淫",
+      "amount": -500,
+      "createdAt": "2026-08-14T03:35:18.221Z",
+      "updatedAt": "2026-08-14T03:35:18.221Z"
+    },
     {
       "id": "27801c1b-63d1-4652-8a10-310ab4b9d7be",
       "date": "2026-08-13",
