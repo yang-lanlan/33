@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-08-15T01:00:34.920Z",
+  "exportedAt": "2026-08-16T06:03:35.912Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "c5b16bd5-4901-4edf-b11c-480777cfe68d",
+      "date": "2026-08-16",
+      "name": "纸巾",
+      "category": "百货",
+      "amount": 33,
+      "createdAt": "2026-08-16T06:03:35.852Z",
+      "updatedAt": "2026-08-16T06:03:35.852Z"
+    },
     {
       "id": "7d24f028-d8cd-44e0-bb23-69d567b5588f",
       "date": "2026-08-14",
