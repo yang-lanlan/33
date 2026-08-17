@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-08-16T21:41:34.180Z",
+  "exportedAt": "2026-08-17T19:46:45.609Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "777dd97c-59e2-474e-ab15-f57c7c76550f",
+      "date": "2026-08-17",
+      "name": "打火机",
+      "category": "百货",
+      "amount": 10,
+      "createdAt": "2026-08-17T19:46:45.549Z",
+      "updatedAt": "2026-08-17T19:46:45.549Z"
+    },
     {
       "id": "54732aa3-f02c-4a00-b5bd-98262ba4699d",
       "date": "2026-08-16",
