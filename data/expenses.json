@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-08-18T00:10:26.653Z",
+  "exportedAt": "2026-08-18T00:10:39.218Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "8051a6ac-51d9-402c-9228-0a30ccf00926",
+      "date": "2026-08-17",
+      "name": "川山甲",
+      "category": "食品",
+      "amount": 61,
+      "createdAt": "2026-08-18T00:10:39.145Z",
+      "updatedAt": "2026-08-18T00:10:39.145Z"
+    },
     {
       "id": "2084332e-bd83-459a-8906-17b8f0f7ba7f",
       "date": "2026-08-17",
