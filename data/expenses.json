@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-08-17T20:16:15.569Z",
+  "exportedAt": "2026-08-18T00:10:26.653Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "2084332e-bd83-459a-8906-17b8f0f7ba7f",
+      "date": "2026-08-17",
+      "name": "taco",
+      "category": "食品",
+      "amount": 10,
+      "createdAt": "2026-08-18T00:10:26.582Z",
+      "updatedAt": "2026-08-18T00:10:26.582Z"
+    },
     {
       "id": "dfc12869-2af2-40c6-9b7c-1fd17d4d08bb",
       "date": "2026-08-17",
