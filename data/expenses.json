@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-08-22T18:26:38.564Z",
+  "exportedAt": "2026-08-23T00:47:50.916Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "7961f59e-7fac-446f-87f0-1950e819c9e0",
+      "date": "2026-08-22",
+      "name": "茉莉花茶",
+      "category": "食品",
+      "amount": 50,
+      "createdAt": "2026-08-23T00:47:50.851Z",
+      "updatedAt": "2026-08-23T00:47:50.851Z"
+    },
     {
       "id": "6892b7f0-42cd-4b21-b64a-85482b852693",
       "date": "2026-08-22",
