@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-08-25T21:33:31.502Z",
+  "exportedAt": "2026-08-26T19:34:10.519Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "fcb42058-3f80-42b1-b5a6-dbeacdd49191",
+      "date": "2026-08-26",
+      "name": "面包",
+      "category": "衣物",
+      "amount": 19,
+      "createdAt": "2026-08-26T19:34:10.456Z",
+      "updatedAt": "2026-08-26T19:34:10.456Z"
+    },
     {
       "id": "74adcf24-c7de-4540-900b-9b3623400e21",
       "date": "2026-08-25",
