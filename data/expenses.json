@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-08-27T23:31:57.134Z",
+  "exportedAt": "2026-08-27T23:32:08.161Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "c4805726-c379-4656-a05e-c9c0b7200bc4",
+      "date": "2026-08-27",
+      "name": "化妆棉",
+      "category": "百货",
+      "amount": 2.5,
+      "createdAt": "2026-08-27T23:32:08.104Z",
+      "updatedAt": "2026-08-27T23:32:08.104Z"
+    },
     {
       "id": "74fa490c-9c99-4898-9412-1457f6ebbba9",
       "date": "2026-08-27",
