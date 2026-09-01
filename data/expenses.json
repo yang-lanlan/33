@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-09-01T02:55:12.550Z",
+  "exportedAt": "2026-09-01T02:55:20.418Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "fe1c96fd-c6aa-4547-b3ed-5db0b09ac39a",
+      "date": "2026-08-31",
+      "name": "卖沙发",
+      "category": "卖淫",
+      "amount": -40,
+      "createdAt": "2026-09-01T02:55:20.353Z",
+      "updatedAt": "2026-09-01T02:55:20.353Z"
+    },
     {
       "id": "2b005b08-6017-4fa0-a54b-d2ae62a96738",
       "date": "2026-08-31",
