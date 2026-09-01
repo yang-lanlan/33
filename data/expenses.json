@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-09-01T02:55:20.418Z",
+  "exportedAt": "2026-09-01T02:55:26.985Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "5b0d7a93-6d7b-49d6-9d73-a51680739d59",
+      "date": "2026-08-31",
+      "name": "卖椅子",
+      "category": "卖淫",
+      "amount": -10,
+      "createdAt": "2026-09-01T02:55:26.920Z",
+      "updatedAt": "2026-09-01T02:55:26.920Z"
+    },
     {
       "id": "fe1c96fd-c6aa-4547-b3ed-5db0b09ac39a",
       "date": "2026-08-31",
