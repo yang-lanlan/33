@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-02T18:55:59.021Z",
+  "exportedAt": "2026-09-02T21:31:38.380Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -46,15 +46,6 @@
       "amount": -40,
       "createdAt": "2026-09-01T02:55:20.353Z",
       "updatedAt": "2026-09-01T02:55:20.353Z"
-    },
-    {
-      "id": "2b005b08-6017-4fa0-a54b-d2ae62a96738",
-      "date": "2026-08-31",
-      "name": "卖冰箱",
-      "category": "卖淫",
-      "amount": -50,
-      "createdAt": "2026-09-01T02:55:12.521Z",
-      "updatedAt": "2026-09-01T02:55:12.521Z"
     },
     {
       "id": "ed8436bc-53bb-467a-9003-8ef23ff35e08",
