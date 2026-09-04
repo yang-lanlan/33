@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-04T15:39:45.209Z",
+  "exportedAt": "2026-09-04T15:40:09.731Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -5247,6 +5247,14 @@
       "amount": 1830,
       "createdAt": "2026-09-04T15:38:52.926Z",
       "updatedAt": "2026-09-04T15:38:52.926Z"
+    },
+    {
+      "id": "a0cb55d1-cc3e-4336-aa68-c9ffce123199",
+      "date": "2026-07-31",
+      "name": "水费",
+      "amount": 24,
+      "createdAt": "2026-09-04T15:40:09.728Z",
+      "updatedAt": "2026-09-04T15:40:09.728Z"
     },
     {
       "id": "84214187-2aa2-4630-9eaf-e81a7ef2d164",
