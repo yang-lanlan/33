@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-09-04T17:05:25.215Z",
+  "exportedAt": "2026-09-04T17:05:50.087Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "9d8b7560-84d9-4858-aa04-4b463aac908d",
+      "date": "2026-09-04",
+      "name": "穿山甲",
+      "category": "食品",
+      "amount": 10,
+      "createdAt": "2026-09-04T17:05:50.021Z",
+      "updatedAt": "2026-09-04T17:05:50.021Z"
+    },
     {
       "id": "2bf37442-b9d9-4b60-aa2d-9a434b59a67b",
       "date": "2026-09-04",
