@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-04T15:24:19.775Z",
+  "exportedAt": "2026-09-04T15:37:59.187Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -5224,6 +5224,14 @@
     }
   ],
   "specialRecords": [
+    {
+      "id": "82b873e0-450e-4ba4-b1c4-72b67d6ca235",
+      "date": "2026-09-01",
+      "name": "房租",
+      "amount": 1830,
+      "createdAt": "2026-09-04T15:37:59.182Z",
+      "updatedAt": "2026-09-04T15:37:59.182Z"
+    },
     {
       "id": "84214187-2aa2-4630-9eaf-e81a7ef2d164",
       "date": "2026-07-29",
