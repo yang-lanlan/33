@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-09-05T16:57:01.694Z",
+  "exportedAt": "2026-09-05T23:56:05.082Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "5c7e8570-7b89-412f-b3ed-695a2442dd3c",
+      "date": "2026-09-05",
+      "name": "onga",
+      "category": "食品",
+      "amount": 49,
+      "createdAt": "2026-09-05T23:56:05.010Z",
+      "updatedAt": "2026-09-05T23:56:05.010Z"
+    },
     {
       "id": "cac19bc9-f2f3-4097-b8ee-0a413717a8bf",
       "date": "2026-09-05",
