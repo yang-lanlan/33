@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-09T18:37:12.889Z",
+  "exportedAt": "2026-09-09T19:24:59.435Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -5368,6 +5368,14 @@
     }
   ],
   "specialRecords": [
+    {
+      "id": "650a0bf8-df14-4b69-bb3d-3f261a0a9f1d",
+      "date": "2026-09-09",
+      "name": "正畸",
+      "amount": 725,
+      "createdAt": "2026-09-09T19:24:59.430Z",
+      "updatedAt": "2026-09-09T19:24:59.430Z"
+    },
     {
       "id": "82b873e0-450e-4ba4-b1c4-72b67d6ca235",
       "date": "2026-09-01",
