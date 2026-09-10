@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-09-09T19:24:59.435Z",
+  "exportedAt": "2026-09-10T00:55:43.497Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "44800f3e-702f-4491-9c61-6c8b64c72245",
+      "date": "2026-09-09",
+      "name": "烤冷面",
+      "category": "食品",
+      "amount": 5,
+      "createdAt": "2026-09-10T00:55:43.431Z",
+      "updatedAt": "2026-09-10T00:55:43.431Z"
+    },
     {
       "id": "25b60f05-7654-44a3-b23f-547a8ffe3d1a",
       "date": "2026-09-09",
