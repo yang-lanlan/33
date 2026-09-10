@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-09-10T00:55:43.497Z",
+  "exportedAt": "2026-09-10T02:02:02.738Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "dd04b33a-2c5b-4346-aec6-a8b8eb412581",
+      "date": "2026-09-09",
+      "name": "鲍师傅",
+      "category": "食品",
+      "amount": 65,
+      "createdAt": "2026-09-10T02:02:02.656Z",
+      "updatedAt": "2026-09-10T02:02:02.656Z"
+    },
     {
       "id": "44800f3e-702f-4491-9c61-6c8b64c72245",
       "date": "2026-09-09",
