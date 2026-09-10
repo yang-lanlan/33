@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-10T02:02:02.738Z",
+  "exportedAt": "2026-09-10T02:32:08.898Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -5386,6 +5386,14 @@
     }
   ],
   "specialRecords": [
+    {
+      "id": "ad71019b-5b93-45bf-b652-f58d41037633",
+      "date": "2026-09-09",
+      "name": "8月电费",
+      "amount": 98,
+      "createdAt": "2026-09-10T02:32:08.892Z",
+      "updatedAt": "2026-09-10T02:32:08.892Z"
+    },
     {
       "id": "650a0bf8-df14-4b69-bb3d-3f261a0a9f1d",
       "date": "2026-09-09",
