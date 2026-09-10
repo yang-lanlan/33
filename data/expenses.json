@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-09-10T19:43:41.829Z",
+  "exportedAt": "2026-09-10T19:43:50.149Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "4a2108ac-68bd-4f6f-872b-f715acb30be6",
+      "date": "2026-09-10",
+      "name": "公仔",
+      "category": "健康",
+      "amount": 20,
+      "createdAt": "2026-09-10T19:43:50.081Z",
+      "updatedAt": "2026-09-10T19:43:50.081Z"
+    },
     {
       "id": "078aa675-27a4-4a7c-bf16-e17461dfba24",
       "date": "2026-09-10",
