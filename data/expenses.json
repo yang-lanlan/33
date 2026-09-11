@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-10T19:43:50.149Z",
+  "exportedAt": "2026-09-11T01:46:52.671Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -5422,6 +5422,14 @@
     }
   ],
   "specialRecords": [
+    {
+      "id": "a8793641-3aa5-4b64-bfd4-b4c920f6b90f",
+      "date": "2026-09-10",
+      "name": "托福考试费",
+      "amount": 329,
+      "createdAt": "2026-09-11T01:46:52.670Z",
+      "updatedAt": "2026-09-11T01:46:52.670Z"
+    },
     {
       "id": "ad71019b-5b93-45bf-b652-f58d41037633",
       "date": "2026-09-09",
