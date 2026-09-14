@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-09-12T18:56:52.994Z",
+  "exportedAt": "2026-09-14T01:29:26.078Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "d7409e58-9624-4d23-ae25-8e34f6557487",
+      "date": "2026-09-13",
+      "name": "tan",
+      "category": "食品",
+      "amount": 15,
+      "createdAt": "2026-09-14T01:29:26.011Z",
+      "updatedAt": "2026-09-14T01:29:26.011Z"
+    },
     {
       "id": "4d4645d9-d68b-40da-8a17-7008f4c891fd",
       "date": "2026-09-12",
