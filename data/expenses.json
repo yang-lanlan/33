@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-09-30T00:29:25.496Z",
+  "exportedAt": "2026-09-30T20:24:16.651Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "f73edc01-9f11-48ac-a7dc-6707ed21df0f",
+      "date": "2026-09-30",
+      "name": "地铁",
+      "category": "交通",
+      "amount": 12.5,
+      "createdAt": "2026-09-30T20:24:16.584Z",
+      "updatedAt": "2026-09-30T20:24:16.584Z"
+    },
     {
       "id": "384cdf91-f907-4e0f-bb87-cc5491177b1b",
       "date": "2026-09-29",
