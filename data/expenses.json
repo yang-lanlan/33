@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-10-02T15:14:10.194Z",
+  "exportedAt": "2026-10-02T15:23:36.196Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "77b4f289-d598-4817-842f-d1b0a658b2b9",
+      "date": "2026-10-02",
+      "name": "内分泌科",
+      "category": "健康",
+      "amount": 78,
+      "createdAt": "2026-10-02T15:23:36.125Z",
+      "updatedAt": "2026-10-02T15:23:36.125Z"
+    },
     {
       "id": "d5b6ab91-d8ef-433b-bdb5-4da43338aca6",
       "date": "2026-10-02",
