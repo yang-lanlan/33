@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-10-02T14:44:06.206Z",
+  "exportedAt": "2026-10-02T14:44:31.749Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "0dac90dd-36b5-48c9-83fc-90b0a72359e6",
+      "date": "2026-10-02",
+      "name": "星巴克",
+      "category": "食品",
+      "amount": 5,
+      "createdAt": "2026-10-02T14:44:31.680Z",
+      "updatedAt": "2026-10-02T14:44:31.680Z"
+    },
     {
       "id": "5760e446-1dee-4615-8965-e1ab4233137c",
       "date": "2026-10-02",
