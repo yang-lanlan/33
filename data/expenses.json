@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-10-02T14:44:31.749Z",
+  "exportedAt": "2026-10-02T15:14:10.194Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "d5b6ab91-d8ef-433b-bdb5-4da43338aca6",
+      "date": "2026-10-02",
+      "name": "陪睡",
+      "category": "卖淫",
+      "amount": -318,
+      "createdAt": "2026-10-02T15:14:10.122Z",
+      "updatedAt": "2026-10-02T15:14:10.122Z"
+    },
     {
       "id": "0dac90dd-36b5-48c9-83fc-90b0a72359e6",
       "date": "2026-10-02",
