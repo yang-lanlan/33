@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-05T22:29:03.186Z",
+  "exportedAt": "2026-10-06T00:10:16.282Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -10,6 +10,15 @@
       "amount": 35,
       "createdAt": "2026-10-05T04:18:55.436Z",
       "updatedAt": "2026-10-05T04:18:55.436Z"
+    },
+    {
+      "id": "f8ac5672-12cd-411a-a00f-4df4ba2dfaca",
+      "date": "2026-10-05",
+      "name": "cheftan",
+      "category": "食品",
+      "amount": 12,
+      "createdAt": "2026-10-06T00:10:16.208Z",
+      "updatedAt": "2026-10-06T00:10:16.208Z"
     },
     {
       "id": "d39ba58e-d6cf-4a2a-8478-acb6765ff8ad",
