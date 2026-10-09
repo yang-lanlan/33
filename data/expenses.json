@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-10-08T19:52:16.034Z",
+  "exportedAt": "2026-10-09T06:29:33.415Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "190d6f80-abb0-41ad-86c5-fe10521df864",
+      "date": "2026-10-09",
+      "name": "amazon",
+      "category": "食品",
+      "amount": 36,
+      "createdAt": "2026-10-09T06:29:33.344Z",
+      "updatedAt": "2026-10-09T06:29:33.344Z"
+    },
     {
       "id": "81f2df38-a65a-4f57-b70b-ad154755679f",
       "date": "2026-10-08",
