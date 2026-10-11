@@ -1,15 +1,15 @@
 {
-  "exportedAt": "2026-10-11T02:32:37.014Z",
+  "exportedAt": "2026-10-11T02:34:11.924Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
       "id": "244f0ab4-b7d2-4d76-bc25-3a3433f487f7",
       "date": "2026-10-10",
       "name": "肥皂液",
-      "category": "食品",
+      "category": "百货",
       "amount": 156,
       "createdAt": "2026-10-11T02:32:36.940Z",
-      "updatedAt": "2026-10-11T02:32:36.940Z"
+      "updatedAt": "2026-10-11T02:34:11.852Z"
     },
     {
       "id": "a2dcaafd-1ad5-44ec-8fdb-3b8fde7b96db",
