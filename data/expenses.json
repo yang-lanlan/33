@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-10-11T02:34:11.924Z",
+  "exportedAt": "2026-10-11T17:38:56.046Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "a371dab7-3f75-4372-9a6e-518f63de2d8a",
+      "date": "2026-10-11",
+      "name": "手套",
+      "category": "食品",
+      "amount": 38,
+      "createdAt": "2026-10-11T17:38:55.975Z",
+      "updatedAt": "2026-10-11T17:38:55.975Z"
+    },
     {
       "id": "244f0ab4-b7d2-4d76-bc25-3a3433f487f7",
       "date": "2026-10-10",
