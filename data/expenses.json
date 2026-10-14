@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-10-14T06:18:39.244Z",
+  "exportedAt": "2026-10-14T17:31:40.502Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "bf9687e0-b418-4eee-9c57-f8c8dae5aaa2",
+      "date": "2026-10-14",
+      "name": "当妓女",
+      "category": "卖淫",
+      "amount": -31,
+      "createdAt": "2026-10-14T17:31:40.467Z",
+      "updatedAt": "2026-10-14T17:31:40.467Z"
+    },
     {
       "id": "24a3a2d4-293a-464e-8e33-f3f56e428ca0",
       "date": "2026-10-14",
