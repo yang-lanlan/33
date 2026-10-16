@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-10-16T22:21:09.088Z",
+  "exportedAt": "2026-10-16T22:54:00.019Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "a1dddb39-eeb2-45da-9742-c042a0de9b30",
+      "date": "2026-10-16",
+      "name": "叉烧",
+      "category": "食品",
+      "amount": 33,
+      "createdAt": "2026-10-16T22:53:59.940Z",
+      "updatedAt": "2026-10-16T22:53:59.940Z"
+    },
     {
       "id": "7f533627-c9a1-4ccc-b927-681ca72af74e",
       "date": "2026-10-16",
