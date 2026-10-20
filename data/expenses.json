@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-10-20T21:54:47.109Z",
+  "exportedAt": "2026-10-20T21:56:57.229Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "aed93d77-735d-4cc1-9d20-af539b5d6f41",
+      "date": "2026-10-20",
+      "name": "海底捞",
+      "category": "食品",
+      "amount": 38,
+      "createdAt": "2026-10-20T21:56:57.151Z",
+      "updatedAt": "2026-10-20T21:56:57.151Z"
+    },
     {
       "id": "1511e400-20ae-46a9-ade3-4aa659fc70ba",
       "date": "2026-10-20",
