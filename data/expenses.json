@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-19T22:30:57.589Z",
+  "exportedAt": "2026-10-20T16:48:54.625Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -6502,6 +6502,14 @@
     }
   ],
   "specialRecords": [
+    {
+      "id": "c5a4d5fe-a838-478c-a732-e1cd2d55b7ee",
+      "date": "2026-10-20",
+      "name": "托福",
+      "amount": 280,
+      "createdAt": "2026-10-20T16:48:54.622Z",
+      "updatedAt": "2026-10-20T16:48:54.622Z"
+    },
     {
       "id": "07c56759-0791-4173-b560-28d18e87568c",
       "date": "2026-10-14",
