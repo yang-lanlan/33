@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-10-26T23:47:37.828Z",
+  "exportedAt": "2026-10-26T23:48:26.414Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "72eac239-ae91-4f06-a4ae-52ac6e14e486",
+      "date": "2026-10-26",
+      "name": "greenwich",
+      "category": "食品",
+      "amount": 24,
+      "createdAt": "2026-10-26T23:48:26.335Z",
+      "updatedAt": "2026-10-26T23:48:26.335Z"
+    },
     {
       "id": "35f7af1e-a546-468c-984b-e2b13d937dd9",
       "date": "2026-10-26",
