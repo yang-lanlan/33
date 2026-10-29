@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-10-29T02:00:48.301Z",
+  "exportedAt": "2026-10-29T02:01:25.988Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "f34a24c7-6d30-4eb5-abd6-6626998399c4",
+      "date": "2026-10-29",
+      "name": "weee",
+      "category": "食品",
+      "amount": 22,
+      "createdAt": "2026-10-29T02:01:25.890Z",
+      "updatedAt": "2026-10-29T02:01:25.890Z"
+    },
     {
       "id": "709eb4a6-47af-4d6a-b0ba-e9d68e83324c",
       "date": "2026-10-28",
