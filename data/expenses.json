@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-03T20:30:46.449Z",
+  "exportedAt": "2026-11-03T21:35:52.081Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -28,6 +28,15 @@
       "amount": 6.5,
       "createdAt": "2026-11-03T20:13:15.778Z",
       "updatedAt": "2026-11-03T20:13:15.778Z"
+    },
+    {
+      "id": "ad7c4cae-cad9-4618-a857-eb1ae233e42c",
+      "date": "2026-11-02",
+      "name": "寿司",
+      "category": "食品",
+      "amount": 53,
+      "createdAt": "2026-11-02T21:22:46.605Z",
+      "updatedAt": "2026-11-03T21:35:51.998Z"
     },
     {
       "id": "45a30cad-89df-4e37-b1ac-49d692324c51",
@@ -82,15 +91,6 @@
       "amount": 28,
       "createdAt": "2026-11-02T21:23:35.204Z",
       "updatedAt": "2026-11-02T21:23:35.204Z"
-    },
-    {
-      "id": "ad7c4cae-cad9-4618-a857-eb1ae233e42c",
-      "date": "2026-11-02",
-      "name": "寿司",
-      "category": "食品",
-      "amount": 54,
-      "createdAt": "2026-11-02T21:22:46.605Z",
-      "updatedAt": "2026-11-02T21:22:46.605Z"
     },
     {
       "id": "28b6296a-19c8-46ca-95bc-4d33104a7cdd",
