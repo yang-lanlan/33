@@ -1,7 +1,25 @@
 {
-  "exportedAt": "2026-11-03T20:13:15.860Z",
+  "exportedAt": "2026-11-03T20:30:46.449Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "c0502cf1-cf01-4fee-8b4e-424808daf421",
+      "date": "2026-11-03",
+      "name": "拉面",
+      "category": "食品",
+      "amount": 27.5,
+      "createdAt": "2026-11-03T20:13:07.858Z",
+      "updatedAt": "2026-11-03T20:30:46.367Z"
+    },
+    {
+      "id": "a1b22fd4-ec6d-4f2c-8b4d-499c623b8bef",
+      "date": "2026-11-03",
+      "name": "星巴克",
+      "category": "食品",
+      "amount": 5,
+      "createdAt": "2026-11-03T20:13:32.757Z",
+      "updatedAt": "2026-11-03T20:13:32.757Z"
+    },
     {
       "id": "72b17d3d-fbff-478b-8c87-59fe4f592e96",
       "date": "2026-11-03",
@@ -10,15 +28,6 @@
       "amount": 6.5,
       "createdAt": "2026-11-03T20:13:15.778Z",
       "updatedAt": "2026-11-03T20:13:15.778Z"
-    },
-    {
-      "id": "c0502cf1-cf01-4fee-8b4e-424808daf421",
-      "date": "2026-11-03",
-      "name": "拉面",
-      "category": "食品",
-      "amount": 19.5,
-      "createdAt": "2026-11-03T20:13:07.858Z",
-      "updatedAt": "2026-11-03T20:13:07.858Z"
     },
     {
       "id": "45a30cad-89df-4e37-b1ac-49d692324c51",
