@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-11-04T20:35:25.656Z",
+  "exportedAt": "2026-11-04T21:19:25.100Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "6ece67cc-be1d-416e-aa65-be0c0d6b5785",
+      "date": "2026-11-04",
+      "name": "缺德舅",
+      "category": "食品",
+      "amount": 60,
+      "createdAt": "2026-11-04T21:19:25.018Z",
+      "updatedAt": "2026-11-04T21:19:25.018Z"
+    },
     {
       "id": "c6b0cedd-680f-42c6-b9b0-6ef7199da119",
       "date": "2026-11-04",
