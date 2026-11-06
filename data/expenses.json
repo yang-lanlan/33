@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-11-06T20:56:09.834Z",
+  "exportedAt": "2026-11-06T20:56:59.436Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "2abbed80-e144-4333-8b85-493dde35b30f",
+      "date": "2026-11-06",
+      "name": "炒粉",
+      "category": "食品",
+      "amount": 20,
+      "createdAt": "2026-11-06T20:56:59.356Z",
+      "updatedAt": "2026-11-06T20:56:59.356Z"
+    },
     {
       "id": "fdc159fc-e7c9-4c2d-acd4-239af42792a5",
       "date": "2026-11-06",
