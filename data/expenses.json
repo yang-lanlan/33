@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-11-09T19:59:22.977Z",
+  "exportedAt": "2026-11-09T19:59:31.409Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "91a1a717-3d26-4f10-ad3a-e4dc7302ee09",
+      "date": "2026-11-09",
+      "name": "紫燕百味鸡",
+      "category": "食品",
+      "amount": 18.5,
+      "createdAt": "2026-11-09T19:59:31.327Z",
+      "updatedAt": "2026-11-09T19:59:31.327Z"
+    },
     {
       "id": "1f5b3645-15c0-4e07-8bce-a0589a6465ce",
       "date": "2026-11-09",
