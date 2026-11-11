@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-11-10T16:34:01.263Z",
+  "exportedAt": "2026-11-11T00:43:25.719Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "6cc5a966-ed97-4b19-a6a7-7949e0e85f3f",
+      "date": "2026-11-10",
+      "name": "拉面",
+      "category": "食品",
+      "amount": 11,
+      "createdAt": "2026-11-11T00:43:25.641Z",
+      "updatedAt": "2026-11-11T00:43:25.641Z"
+    },
     {
       "id": "c13f37e5-1dff-406f-887d-4af5a2e0ff24",
       "date": "2026-11-09",
