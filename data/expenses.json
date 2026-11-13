@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-11-13T17:05:50.029Z",
+  "exportedAt": "2026-11-13T19:38:44.765Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "48fc009f-bca9-4e2f-a101-62939635ce74",
+      "date": "2026-11-13",
+      "name": "奶茶",
+      "category": "食品",
+      "amount": 28,
+      "createdAt": "2026-11-13T19:38:44.683Z",
+      "updatedAt": "2026-11-13T19:38:44.683Z"
+    },
     {
       "id": "054e7d24-d8c7-47ee-a0fc-06796f414132",
       "date": "2026-11-13",
