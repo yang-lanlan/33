@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-13T19:38:44.765Z",
+  "exportedAt": "2026-11-14T06:35:07.059Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -7348,6 +7348,14 @@
     }
   ],
   "specialRecords": [
+    {
+      "id": "163a4c48-a264-41b2-b895-7ce612b68daa",
+      "date": "2026-11-14",
+      "name": "申请费",
+      "amount": 80,
+      "createdAt": "2026-11-14T06:35:07.056Z",
+      "updatedAt": "2026-11-14T06:35:07.056Z"
+    },
     {
       "id": "a0068355-f171-46d4-98bc-7cd6b125a124",
       "date": "2026-11-09",
