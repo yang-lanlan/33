@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-11-17T21:19:58.065Z",
+  "exportedAt": "2026-11-18T01:47:19.550Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "1d597855-d039-4cd0-a671-740cd6a423e0",
+      "date": "2026-11-17",
+      "name": "aldi",
+      "category": "食品",
+      "amount": 48,
+      "createdAt": "2026-11-18T01:47:19.467Z",
+      "updatedAt": "2026-11-18T01:47:19.467Z"
+    },
     {
       "id": "bb7a4637-4678-42be-9024-02e1e70029bf",
       "date": "2026-11-17",
