@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-11-18T19:28:34.229Z",
+  "exportedAt": "2026-11-18T19:28:41.057Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "c1fbde9e-29d7-49d1-9638-8fc2f981c901",
+      "date": "2026-11-18",
+      "name": "杨枝甘露",
+      "category": "食品",
+      "amount": 13,
+      "createdAt": "2026-11-18T19:28:40.949Z",
+      "updatedAt": "2026-11-18T19:28:40.949Z"
+    },
     {
       "id": "aa28bb4d-c4f0-4b9f-81e6-57c855e8b9ee",
       "date": "2026-11-18",
