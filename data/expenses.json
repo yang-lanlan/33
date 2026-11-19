@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-19T21:24:14.212Z",
+  "exportedAt": "2026-11-19T21:49:26.456Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -10,6 +10,15 @@
       "amount": 36,
       "createdAt": "2026-11-19T05:08:42.094Z",
       "updatedAt": "2026-11-19T05:08:42.094Z"
+    },
+    {
+      "id": "a8ecc5a6-8a17-44a5-96ef-74e3f4151ec8",
+      "date": "2026-11-19",
+      "name": "阿迪达斯",
+      "category": "衣物",
+      "amount": 16.5,
+      "createdAt": "2026-11-19T21:49:26.368Z",
+      "updatedAt": "2026-11-19T21:49:26.368Z"
     },
     {
       "id": "0811babf-3640-4e86-a914-9654fcbc25c3",
