@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-19T21:49:26.456Z",
+  "exportedAt": "2026-11-19T23:23:21.698Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -10,6 +10,15 @@
       "amount": 36,
       "createdAt": "2026-11-19T05:08:42.094Z",
       "updatedAt": "2026-11-19T05:08:42.094Z"
+    },
+    {
+      "id": "b892af38-fbde-479a-9e24-26b1eca1e093",
+      "date": "2026-11-19",
+      "name": "ck",
+      "category": "衣物",
+      "amount": 318,
+      "createdAt": "2026-11-19T23:23:21.613Z",
+      "updatedAt": "2026-11-19T23:23:21.613Z"
     },
     {
       "id": "a8ecc5a6-8a17-44a5-96ef-74e3f4151ec8",
