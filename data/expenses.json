@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-19T21:21:56.688Z",
+  "exportedAt": "2026-11-19T21:24:14.212Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -16,9 +16,9 @@
       "date": "2026-11-19",
       "name": "北面",
       "category": "衣物",
-      "amount": 80,
+      "amount": 104,
       "createdAt": "2026-11-19T21:21:56.601Z",
-      "updatedAt": "2026-11-19T21:21:56.601Z"
+      "updatedAt": "2026-11-19T21:24:14.125Z"
     },
     {
       "id": "3a0aa86e-8db9-4072-a5db-dc9b77197c47",
