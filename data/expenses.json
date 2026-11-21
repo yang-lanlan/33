@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-21T10:17:45.430Z",
+  "exportedAt": "2026-11-21T10:18:36.852Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
@@ -7,9 +7,9 @@
       "date": "2026-11-21",
       "name": "amazon",
       "category": "百货",
-      "amount": 23,
+      "amount": 24.5,
       "createdAt": "2026-11-21T10:17:45.346Z",
-      "updatedAt": "2026-11-21T10:17:45.346Z"
+      "updatedAt": "2026-11-21T10:18:36.767Z"
     },
     {
       "id": "6947ebad-1bc5-4c2e-bd2f-51775a287b4f",
