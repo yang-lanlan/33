@@ -1,15 +1,15 @@
 {
-  "exportedAt": "2026-11-21T19:22:13.065Z",
+  "exportedAt": "2026-11-21T19:22:19.485Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
     {
       "id": "a7df536b-f88b-4d9c-863b-4ee7396d8b73",
       "date": "2026-11-21",
       "name": "衣架",
-      "category": "食品",
+      "category": "百货",
       "amount": 15.5,
       "createdAt": "2026-11-21T19:22:12.979Z",
-      "updatedAt": "2026-11-21T19:22:12.979Z"
+      "updatedAt": "2026-11-21T19:22:19.409Z"
     },
     {
       "id": "006b4374-e0af-4b99-a6d1-39875fc73fdf",
