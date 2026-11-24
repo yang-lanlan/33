@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-11-24T00:39:02.326Z",
+  "exportedAt": "2026-11-24T00:39:14.592Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "88b2b5d1-ee0c-4b62-bf02-7cb8ad509b7e",
+      "date": "2026-11-23",
+      "name": "麻薯",
+      "category": "食品",
+      "amount": 24.5,
+      "createdAt": "2026-11-24T00:39:14.507Z",
+      "updatedAt": "2026-11-24T00:39:14.507Z"
+    },
     {
       "id": "dd4a7649-32b6-4f31-856c-08d83a076e8b",
       "date": "2026-11-23",
