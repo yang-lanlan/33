@@ -1,7 +1,16 @@
 {
-  "exportedAt": "2026-11-28T02:36:32.977Z",
+  "exportedAt": "2026-11-28T12:41:44.492Z",
   "exchangeRate": "1 USD = 7 CNY",
   "records": [
+    {
+      "id": "bcf3e927-12dc-4a76-aec1-4ee7e63ddacd",
+      "date": "2026-11-28",
+      "name": "洗衣液",
+      "category": "食品",
+      "amount": 36,
+      "createdAt": "2026-11-28T12:41:44.380Z",
+      "updatedAt": "2026-11-28T12:41:44.380Z"
+    },
     {
       "id": "584ed2f9-f8e6-43d5-af88-1acbe73337bf",
       "date": "2026-11-27",
